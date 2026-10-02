@@ -8,7 +8,7 @@ Congdon & Coleman is the trust brand and the licensed legal entity: advisory rel
 
 §4 scopes the requirement, and the scope is narrower than "all Congdon & Coleman communication":
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 > Anything involving representation, valuation, fiduciary judgment, negotiation, or consequential advice comes from a named person.
 
 Those communications carry an advisor's name, direct contact, and signature: market reports, opinions of value, owner advisory letters, and anything touching a client's money or property decisions.

@@ -1,0 +1,43 @@
+name: Guards
+
+# Runs on every pull request and every push to main, with no path filter.
+# Odin's version of this workflow filtered on paths, and a change outside the
+# filter (package.json, the lockfile) could merge without the guard ever running.
+# In a repository that holds only records, running always costs seconds and
+# removes that failure.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: guards-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  guards:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Checker unit tests
+        run: yarn test:brands
+
+      - name: Brand skill citations match their source
+        run: yarn check:brand-skill
+
+      - name: Dated section headings still cover their contents
+        run: yarn check:brand-headers

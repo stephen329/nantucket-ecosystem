@@ -35,7 +35,7 @@ One message class → exactly one sending brand → one consent purpose. `[STRAT
 
 ## Disclosure language library
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 Canonical strings — use verbatim, never paraphrase, **once ratified**. One row is now ratified and counsel-approved — `legal.cc.poweredby`, which is enforced by test in `src/lib/legal/disclosures.ts` and is not a drafting aid. Nothing else in this table is ratified: §12 item 2 ("Approve the Hello Nantucket descriptor, publisher credit, editorial charter, and related-party-link standard") is still open, and the only ratified string record is `docs/strategy/brands/congdon-coleman-ratified-strings.md`. Until §12 closes, these are drafting aids and **must not be enforced** by lint, template check, or schema validation. Note also that the interim publisher line below differs from the strategy's recommended "Published by Congdon & Coleman" — do not treat either as settled.
 
 | ID | Surface | String (interim) |
@@ -48,7 +48,7 @@ Canonical strings — use verbatim, never paraphrase, **once ratified**. One row
 | `attr.nh.listing` | Listing attribution in NH app | `[DECIDE]` |
 | `legal.cc.poweredby` | Legal footers on every C&C surface, lease and payment included | **Ratified and counsel-approved — use verbatim:** "Congdon & Coleman Real Estate, MA Real Estate Broker's License #422678". Re-ratified by Stephen 2026-08-13, compact form approved by counsel 2026-09-11. ~~`[DECIDE: exact licensed-entity string — Stephen authors]`~~ — answered: there is no licensed-entity string, because no surface carries the entity. Held verbatim in `src/lib/legal/disclosures.ts` and recorded in `docs/strategy/brands/congdon-coleman-ratified-strings.md`. |
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 The reader-comprehension gate applies to `disc.hello.*`: disclosure design should be validated by showing sampled readers the surface and asking "who publishes this?". State it as §8 does, in two halves and as **provisional**: "At least 80% of surveyed readers understand the publication's role and ownership; fewer than 5% feel misled." It is a provisional *audience-fit* gate, not a ratified Stage 0 launch condition.
 
 ## Canonical naming

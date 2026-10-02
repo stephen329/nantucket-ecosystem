@@ -15,6 +15,7 @@ This repository is the "designated strategy repository" called for by strategy Â
 | `amendments/` | Dated amendments to the strategy. Start at `amendments/README.md` (status index) and `amendments/TEMPLATE.md` |
 | `brands/` | Canonical naming, ratified strings, decision-register addenda, per-brand assets, and the `nantucket-brands` skill source |
 | `resources/` | Pointers to shared resources that live elsewhere (brand guide PDFs, related docs) |
+| `tools/` | The checks that guard these records, moved from Odin; run in CI on every PR (see `tools/README.md`) |
 | `GOVERNANCE.md` | Authority order, how changes are made, what the markers mean |
 | `PROVENANCE.md` | Where every file came from, and what has not moved yet |
 | `GAPS.md` | Open gaps and decisions as of 2026-10-02 |
