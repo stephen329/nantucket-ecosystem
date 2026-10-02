@@ -38,11 +38,17 @@ Functional references found in the 2026-10-02 snapshot (`c76ccb2`). Prose docume
 | Agent context | `CLAUDE.md`, `AGENTS.md` brand blocks | Update upstream references to this repository |
 | Prose documents | About 20 Odin docs, most heavily `docs/vendor-retirement-and-identity-unification.md` and `docs/blog-multi-brand-administration.md` | Historical citations. Decide whether to rewrite them or leave them as records of what the path was at the time. Relative links such as `./strategy/amendments/...` will break either way |
 
-### Consequences of this mechanism that the owner still decides `[DECIDE]`
+### Consequences of this mechanism — owner answers, 2026-10-02
 
-1. **The brand-skill guard stops firing on strategy changes.** `brand-skill.yml` asserts in both directions that the skill's quotations match the strategy. Today it runs on any change under `docs/strategy/**`. After cutover a strategy change merges in this repository and Odin's workflow never sees it. The check has to run here (CI in this repository), or be triggered from here (for example `repository_dispatch` to Odin). Same for `blog-brand.yml`'s ratified-strings trigger.
-2. **Where Odin finds the files when it runs.** CI and local runs both need the records checked out at a known location (for example a path given by an environment variable). CI needs a read credential for this private repository, which only the owner can create. Local runs and agent sessions need the checkout too. Decide whether the tests fail loudly or skip when the checkout is absent; failing loudly is safer, because a skip is a guard that disconnects without saying so.
-3. **Version pinning.** Decide whether Odin reads `main` of this repository or a pinned commit. Reading `main` means a strategy change can fail an unrelated Odin PR; pinning means a change reaches Odin only when someone bumps the pin.
+1. **The strategy-side guard checks run in this repository.** The brand-skill citation check, the header-coverage check, and the ratified-strings check run in this repository's CI, so a strategy change is checked where it merges. *Implementation still to be done:* those scripts are Odin code (they use `src/lib/brands/header-coverage.ts`, `mdast-util-from-markdown`, and Odin's `yarn` setup), so moving them means porting or vendoring their dependencies. Odin's path-filtered workflows (`brand-skill.yml`, `blog-brand.yml`) lose their `docs/strategy/**` trigger at cutover.
+2. **This repository is private.** Odin's CI therefore needs a read credential for it, which only the owner can create. This answer does not yet say how local runs and agent sessions obtain the checkout; the cutover PR specifies that.
+3. **Odin reads a pinned commit of this repository.** A strategy change reaches Odin only when the pin is bumped, so an unrelated Odin PR cannot fail because of an upstream strategy edit. Because the guards in item 1 run here against this repository's own head, strategy-versus-skill drift is caught at merge in this repository, not when Odin next bumps the pin.
+
+### Still open `[DECIDE]`
+
+- Whether Odin's tests fail or skip when the checkout is absent. Failing is safer: a skip is a guard that disconnects without saying so.
+- Who bumps the pin, and when (for example, at each amendment approval).
+- Whether the ~20 Odin prose documents that cite `docs/strategy/...` are rewritten or left as historical records.
 
 ## Affected metrics, gates, and parameters
 
