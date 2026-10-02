@@ -50,10 +50,12 @@ Functional references found in the 2026-10-02 snapshot (`c76ccb2`). Prose docume
 5. **The pin is bumped at each amendment.** Each time an amendment is approved and merged in this repository, Odin's pin is bumped to include it. This answer does not say who performs the bump.
 6. **Odin's prose documents are updated, not left as historical records.** The roughly 20 Odin documents that cite `docs/strategy/...` are rewritten to cite this repository. Two constraints for that rewrite: the copied files are byte-identical to Odin's, so `file:line` citations (for example into the 2026-09-16 originator-classes amendment) keep their line numbers and only the path prefix changes; and relative links such as `./strategy/amendments/...` need a real target in this repository rather than a prefix swap. *(The owner's one-word answer, "update", is read as the answer to this question; confirm if it meant something else.)*
 
+7. **How Odin gets the checkout at the pin (owner chose "pin file plus fetch script").** Odin records the pinned commit as a full SHA in a `.strategy-pin` file. A sync script fetches exactly that commit into a gitignored `.strategy/` folder. CI, Odin's session-start hook, and developers all run the same script. Every Odin check reads that folder and fails loudly if it is missing or its commit does not match the pin. A pin bump is a one-line change in an Odin pull request. Odin's CI needs a read-only credential for this private repository, which the owner creates. An agent session without this repository attached cannot fetch the commit, and so cannot run the strategy tests; that is the cost of failing loudly with no copy in Odin.
+8. **Porting the guard checks (owner chose "copy them into this repository").** Done in pull request #2 on this repository: the skill-citation and header-coverage checkers, their libraries and 76 unit tests, with a workflow that runs on every pull request and every push to `main` with no path filter. Odin deletes its copies at cutover. Odin's path-filtered workflows (`brand-skill.yml`, `blog-brand.yml`) lose their `docs/strategy/**` trigger then. `check:line-citations` and the blog-brand tests stay in Odin and read the pinned checkout.
+
 ### Still open `[DECIDE]`
 
-- How local runs and agent sessions obtain the strategy checkout at the pinned commit.
-- Porting the strategy-side guard scripts out of Odin (item 1 above): scope and owner.
+- Who performs each pin bump. The owner said the pin is bumped at each amendment; no one is yet named to do it.
 
 ## Affected metrics, gates, and parameters
 
