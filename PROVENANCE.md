@@ -12,7 +12,7 @@ All files except the ones listed under "Written for this repository" were copied
 
 ## Written for this repository
 
-`README.md`, `GOVERNANCE.md`, `PROVENANCE.md`, `GAPS.md`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/CODEOWNERS`, `amendments/README.md` (generated from the Status bullets), `amendments/TEMPLATE.md`, `resources/README.md`.
+`README.md`, `GOVERNANCE.md`, `PROVENANCE.md`, `GAPS.md`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/CODEOWNERS`, `amendments/README.md` (generated from the Status bullets), `amendments/TEMPLATE.md`, `amendments/2026-10-02-strategy-repository-designation.md` (proposed), `resources/README.md`.
 
 ## Not yet moved
 

@@ -4,7 +4,14 @@ As of 2026-10-02, from the snapshot of `stephen329/odin` @ `c76ccb2`, a Google D
 
 ## Decisions needed
 
-1. **Make this repository the authority, or keep it a mirror.** 64 files in Odin reference `docs/strategy/`, including `src/lib/roadmap/amendment-status.ts`, which parses `docs/strategy/amendments/` and whose test fails on missing, unrecognized, or ambiguous statuses. Moving the authority changes an authoritative system and needs a dated amendment. Suggested sequence: designate this repo by amendment, repoint Odin's roadmap tooling and context blocks, then remove the Odin copy. Until then, edits made in one place must be made in both.
+1. **Moving the authority out of Odin (owner proposed this 2026-10-02; not yet done).** It needs a dated amendment: `amendments/2026-10-02-strategy-repository-designation.md` is drafted and **Proposed**. What depends on `docs/strategy/` in Odin today:
+   - **Tests** that read the files: `src/lib/roadmap/amendment-status.test.ts` and `items.test.ts` (both read `docs/strategy/amendments/`).
+   - **CI workflows:** `brand-skill.yml` (also triggers on `docs/strategy/**`), `blog-brand.yml` (reads the C&C ratified strings), and the doc-citations workflow.
+   - **Scripts:** `scripts/brands/check-skill-citations.ts`, `check-header-coverage.ts`, `scripts/docs/check-line-citations.ts`, `scripts/agents/design-consistency.py`.
+   - **Agent context:** `CLAUDE.md` and `AGENTS.md` brand blocks.
+   - **Source files:** about 40 `.ts`/`.tsx`/`.css`/`.sql` files cite the path, mostly in comments (not individually checked).
+   
+   The mechanism is undecided (`[DECIDE]` in the amendment). A git submodule mounted at `docs/strategy` keeps every path above working unchanged, but every workflow that reads the files then needs submodule checkout with credentials for a private repo. Until the amendment is approved and Odin is cut over, edits made in one place must be made in both.
 2. **Three amendments are proposed and unapproved:** the systems-of-record map (2026-09-14), the Nantucket Houses property-value record class (2026-09-16), and the per-brand marketing message classes (2026-09-16, taxonomy). See `amendments/README.md`.
 3. **Qualified-adviser validation is open for all seven items** in the decision record's queue (compliance status language, co-broker authorization and crawler terms, Hello purpose-limitation rule, CSAT classification, related-party disclosure, IP chain of title, accounting definitions). Not checked: whether closure notes exist outside `docs/strategy/`.
 4. **Hello Nantucket owned-surface scope change** (not verified; from the 2026-09-28 chat): PR #8 on `stephen329/hellonantucket` revises launch-sequence Sections 6 and 7 and conflicts with the repo's `CLAUDE.md` pilot-scope constraint. It awaits ratification. Sender choice (Kit vs Resend/SES) is also open. If ratified, it needs an amendment here.
@@ -19,7 +26,7 @@ As of 2026-10-02, from the snapshot of `stephen329/odin` @ `c76ccb2`, a Google D
 
 ## Housekeeping
 
-10. **Two copies of the `nantucket-brands` skill disagree.** The copy loaded in the Claude account differs from `brands/skill/` in `SKILL.md` and all six reference files. `brands/README.md` says the account copy is re-uploaded manually and no generator exists. Which is upstream has not been decided.
+10. **The account copy of the `nantucket-brands` skill is out of step with the repo copy.** It differs from `brands/skill/` in `SKILL.md` and all six reference files. Odin's convention (decided 2026-09-03, `brands/skill/README.md`) is that the repo copy is upstream and the account copy is a manually published artifact, so the account copy is the one to republish. I did not check which copy is newer. Publishing steps in that README use `docs/strategy/...` paths; after cutover they become `brands/skill/`.
 11. **Open markers** (`[DECIDE]`, `[AUDIT]`, `[LAUNCH GATE]`, `[LEGAL REVIEW]`) remain in 10 of the copied files, most heavily in `brands/nantucket-brands-skill-reconciliation.md` (12) and `brands/skill/README.md` (5).
 12. **Monthly review.** The decision record sets review on the 15th of each month; the next is 2026-10-15. No review record for 2026-09-15 was found in this snapshot.
 13. **Strategy §12 deliverable 14** ("place Version 1.0 and its decision record in the designated strategy repository, with a named document owner, next review date, and amendments recorded") is satisfied only once item 1 is decided.
