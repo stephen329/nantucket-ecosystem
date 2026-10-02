@@ -44,7 +44,7 @@ From the strategy §3. This answers "whose content is this?" and is **not** the
 sending-brand matrix below, which answers "who sends this message?". Confusing
 the two excludes brands from topics they own.
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 | Topic | Owning brand |
 |---|---|
 | Island culture, local voices, history, stewardship, seasonality, and visiting thoughtfully | Hello Nantucket |
@@ -53,7 +53,7 @@ the two excludes brands from topics they own.
 | Real-estate market reports, valuation, ownership counsel, buying, and selling | Congdon & Coleman |
 | Operational, compliance, data-quality, and agent-action reporting | Odin |
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 §3's one explicit prohibition: "Hello should not publish listings, act as a
 booking surface, or become the primary publisher of real-estate and
 rental-market intelligence. It may link to clearly identified affiliated

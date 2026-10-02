@@ -1,0 +1,20 @@
+{
+  "name": "nantucket-ecosystem",
+  "private": true,
+  "description": "Governing records for the Nantucket house of brands. Tooling here only checks the records.",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "test:brands": "tsx --test tools/lib/*.test.ts",
+    "check:brand-skill": "tsx tools/check-skill-citations.ts",
+    "check:brand-headers": "tsx tools/check-header-coverage.ts",
+    "check": "yarn test:brands && yarn check:brand-skill && yarn check:brand-headers"
+  },
+  "dependencies": {
+    "mdast-util-from-markdown": "^2.0.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
+}

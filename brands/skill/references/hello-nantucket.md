@@ -25,10 +25,10 @@ The stance is *durable* because it must survive off-season, storms, crowding com
 
 This is the highest-scrutiny element of the entire portfolio, and common ownership is never concealed — that much is settled (§3: Hello "must not be described as unaffiliated or institutionally independent").
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 **What is not settled: the specific wording, the placements, and their enforcement.** §3 offers a *recommended* public system and says the publisher credit "should be easy to find" in the bio, About page, footer, newsletter footer and signup/privacy language. §12 item 2 lists approval of the descriptor, publisher credit, editorial charter and related-party-link standard among the remaining 90-day decisions, and no ratified Hello string exists. So the list below is the **proposed** shape, not a requirement, and **must not be enforced** by lint, template check or schema validation before §12 closes.
 
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 The comprehension gate is likewise provisional, and §8 states it in two halves: "At least 80% of surveyed readers understand the publication's role and ownership; fewer than 5% feel misled."
 
 **Proposed placements, pending §12 approval:**

@@ -132,7 +132,7 @@ the strategy is **quoted, not restated**, and the quotation carries a marker
 naming its source:
 
 ```markdown
-<!-- law: docs/strategy/nantucket-ecosystem-integrated-strategy.md -->
+<!-- law: nantucket-ecosystem-integrated-strategy.md -->
 | Topic | Owning brand |
 |---|---|
 | Island culture, local voices, history, … | Hello Nantucket |
