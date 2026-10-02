@@ -22,7 +22,7 @@ The strategy, its amendments, and the brand records govern four brands and five 
 
 ## Mechanism — decided by the owner, 2026-10-02
 
-**Odin's tooling is repointed to read the strategy and brand records from this repository.** Odin does not keep a copy and does not mount this repository as a submodule. Recorded from the owner's direction in chat on 2026-10-02; this amendment remains **Proposed** until the owner approves it.
+**Odin's tooling is repointed to read the strategy and brand records from this repository.** Odin does not keep a copy and does not mount this repository as a submodule. Recorded from the owner's direction in chat on 2026-10-02; the owner approved the amendment the same day (see Approval).
 
 ### What the cutover changes in `stephen329/odin`
 
