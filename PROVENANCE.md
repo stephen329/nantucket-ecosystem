@@ -18,6 +18,6 @@ All files except the ones listed under "Written for this repository" were copied
 
 ## Not yet moved
 
-- The authority. Odin's `docs/strategy/` is still what 64 other files in Odin reference, including `src/lib/roadmap/amendment-status.ts` and its tests. Until an amendment designates this repository, treat Odin as authoritative and this repository as a mirror.
+- The authority. Odin's `docs/strategy/` is still what 64 other files in Odin reference, including `src/lib/roadmap/amendment-status.ts` and its tests. The designation amendment was approved 2026-10-02 but takes effect at the Odin cutover; until that pull request merges, treat Odin as authoritative and this repository as a mirror.
 - Related Odin documents outside `docs/strategy/`, such as `docs/legal/entity-and-listing-disclosures.md` and `docs/hello/`.
 - Brand guide PDFs (see `resources/README.md`).

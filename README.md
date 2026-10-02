@@ -25,4 +25,4 @@ This repository is the "designated strategy repository" called for by strategy Â
 1. The strategy governs. Where any brand guide, skill, or context block conflicts with it, the strategy wins; propose an amendment instead of deviating.
 2. A decision is operative only once its record is on `main`.
 3. Ratified strings are verbatim. See `brands/README.md`.
-4. This repo is a snapshot of `docs/strategy/` in `stephen329/odin` and is **not yet the authority**. Read `PROVENANCE.md` before relying on it.
+4. Designating this repository as the authority was approved on 2026-10-02 (`amendments/2026-10-02-strategy-repository-designation.md`) and takes effect when Odin's copy is cut over. Until then Odin's `docs/strategy/` is authoritative and this repository is a mirror. Read `PROVENANCE.md` before relying on it.

@@ -1,12 +1,12 @@
 # Amendment — this repository is the designated strategy repository; the strategy and brand records move out of Odin
 
 - **Date raised:** 2026-10-02
-- **Status:** **Proposed — awaiting owner approval.**
+- **Status:** **Approved and ratified — Stephen Maury, 2026-10-02.** Given in chat at 11:11 ET with the instruction that Claude carry out the steps, and recorded here by Claude. The designation takes effect at the Odin cutover (Change, step 4).
 - **Owner:** Stephen Maury (executive sponsor)
 - **Affects:** Version 1.0 decision record ("authoritative systems" in the change protocol); strategy §12 deliverable 14; `brands/README.md` rule 3; `brands/skill/README.md` (publishing steps); and, in `stephen329/odin`: `docs/strategy/`, `src/lib/roadmap/` tests, `.github/workflows/brand-skill.yml`, `blog-brand.yml`, the doc-citations workflow, `scripts/brands/`, `scripts/docs/check-line-citations.ts`, `scripts/agents/design-consistency.py`, `CLAUDE.md`, `AGENTS.md`. Per-repo brand context blocks in `cnc-web-fe`, `nrbe`, `nantuckethouses-platform` (named in `brands/README.md` rule 3) and `hellonantucket`.
 
 <!--
-Drafted by Claude from the owner's 2026-10-02 direction to move these documents out of Odin. Not approved. Nothing below is in effect until the owner replaces the Status bullet.
+Drafted by Claude from the owner's 2026-10-02 direction to move these documents out of Odin. Approved by the owner in chat the same day; see the Approval section.
 -->
 
 ## Reason
@@ -22,7 +22,7 @@ The strategy, its amendments, and the brand records govern four brands and five 
 
 ## Mechanism — decided by the owner, 2026-10-02
 
-**Odin's tooling is repointed to read the strategy and brand records from this repository.** Odin does not keep a copy and does not mount this repository as a submodule. Recorded from the owner's direction in chat on 2026-10-02; this amendment remains **Proposed** until the owner approves it.
+**Odin's tooling is repointed to read the strategy and brand records from this repository.** Odin does not keep a copy and does not mount this repository as a submodule. Recorded from the owner's direction in chat on 2026-10-02; the owner approved the amendment the same day (see Approval).
 
 ### What the cutover changes in `stephen329/odin`
 
@@ -44,11 +44,18 @@ Functional references found in the 2026-10-02 snapshot (`c76ccb2`). Prose docume
 2. **This repository is private.** Odin's CI therefore needs a read credential for it, which only the owner can create. This answer does not yet say how local runs and agent sessions obtain the checkout; the cutover PR specifies that.
 3. **Odin reads a pinned commit of this repository.** A strategy change reaches Odin only when the pin is bumped, so an unrelated Odin PR cannot fail because of an upstream strategy edit. Because the guards in item 1 run here against this repository's own head, strategy-versus-skill drift is caught at merge in this repository, not when Odin next bumps the pin.
 
+### Further owner answers, 2026-10-02
+
+4. **Odin's tests fail loudly** when the strategy checkout is absent or does not match the pin. They never skip.
+5. **The pin is bumped at each amendment.** Each time an amendment is approved and merged in this repository, Odin's pin is bumped to include it. This answer does not say who performs the bump.
+6. **Odin's prose documents are updated, not left as historical records.** The roughly 20 Odin documents that cite `docs/strategy/...` are rewritten to cite this repository. Two constraints for that rewrite: the copied files are byte-identical to Odin's, so `file:line` citations (for example into the 2026-09-16 originator-classes amendment) keep their line numbers and only the path prefix changes; and relative links such as `./strategy/amendments/...` need a real target in this repository rather than a prefix swap. *(The owner's one-word answer, "update", is read as the answer to this question; confirm if it meant something else.)*
+
+7. **How Odin gets the checkout at the pin (owner chose "pin file plus fetch script").** Odin records the pinned commit as a full SHA in a `.strategy-pin` file. A sync script fetches exactly that commit into a gitignored `.strategy/` folder. CI, Odin's session-start hook, and developers all run the same script. Every Odin check reads that folder and fails loudly if it is missing or its commit does not match the pin. A pin bump is a one-line change in an Odin pull request. Odin's CI needs a read-only credential for this private repository, which the owner creates. An agent session without this repository attached cannot fetch the commit, and so cannot run the strategy tests; that is the cost of failing loudly with no copy in Odin.
+8. **Porting the guard checks (owner chose "copy them into this repository").** Done in pull request #2 on this repository: the skill-citation and header-coverage checkers, their libraries and 76 unit tests, with a workflow that runs on every pull request and every push to `main` with no path filter. Odin deletes its copies at cutover. Odin's path-filtered workflows (`brand-skill.yml`, `blog-brand.yml`) lose their `docs/strategy/**` trigger then. `check:line-citations` and the blog-brand tests stay in Odin and read the pinned checkout.
+
 ### Still open `[DECIDE]`
 
-- Whether Odin's tests fail or skip when the checkout is absent. Failing is safer: a skip is a guard that disconnects without saying so.
-- Who bumps the pin, and when (for example, at each amendment approval).
-- Whether the ~20 Odin prose documents that cite `docs/strategy/...` are rewritten or left as historical records.
+- Who performs each pin bump. The owner said the pin is bumped at each amendment; no one is yet named to do it.
 
 ## Affected metrics, gates, and parameters
 
@@ -67,4 +74,6 @@ Until the Odin cutover merges, Odin remains authoritative and this repository is
 
 ## Approval
 
-<!-- Filled in by the owner when approved: who, when, and the PR link. Resolve the [DECIDE] above first. -->
+Approved by Stephen Maury on 2026-10-02 at 11:11 ET, in chat, in response to a list of the remaining steps (merge the two open pull requests, approve this amendment, and proceed with the Odin work): "You are authorized for all steps." Recorded here by Claude. The mechanism choices above are the owner's answers given earlier in the same conversation.
+
+One item stays open under `[DECIDE]`: who performs each pin bump. This approval does not assign it. The designation does not take effect until the Odin cutover pull request merges; until then Odin's `docs/strategy/` remains authoritative.
