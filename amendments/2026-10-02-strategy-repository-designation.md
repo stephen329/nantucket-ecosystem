@@ -44,11 +44,16 @@ Functional references found in the 2026-10-02 snapshot (`c76ccb2`). Prose docume
 2. **This repository is private.** Odin's CI therefore needs a read credential for it, which only the owner can create. This answer does not yet say how local runs and agent sessions obtain the checkout; the cutover PR specifies that.
 3. **Odin reads a pinned commit of this repository.** A strategy change reaches Odin only when the pin is bumped, so an unrelated Odin PR cannot fail because of an upstream strategy edit. Because the guards in item 1 run here against this repository's own head, strategy-versus-skill drift is caught at merge in this repository, not when Odin next bumps the pin.
 
+### Further owner answers, 2026-10-02
+
+4. **Odin's tests fail loudly** when the strategy checkout is absent or does not match the pin. They never skip.
+5. **The pin is bumped at each amendment.** Each time an amendment is approved and merged in this repository, Odin's pin is bumped to include it. This answer does not say who performs the bump.
+6. **Odin's prose documents are updated, not left as historical records.** The roughly 20 Odin documents that cite `docs/strategy/...` are rewritten to cite this repository. Two constraints for that rewrite: the copied files are byte-identical to Odin's, so `file:line` citations (for example into the 2026-09-16 originator-classes amendment) keep their line numbers and only the path prefix changes; and relative links such as `./strategy/amendments/...` need a real target in this repository rather than a prefix swap. *(The owner's one-word answer, "update", is read as the answer to this question; confirm if it meant something else.)*
+
 ### Still open `[DECIDE]`
 
-- Whether Odin's tests fail or skip when the checkout is absent. Failing is safer: a skip is a guard that disconnects without saying so.
-- Who bumps the pin, and when (for example, at each amendment approval).
-- Whether the ~20 Odin prose documents that cite `docs/strategy/...` are rewritten or left as historical records.
+- How local runs and agent sessions obtain the strategy checkout at the pinned commit.
+- Porting the strategy-side guard scripts out of Odin (item 1 above): scope and owner.
 
 ## Affected metrics, gates, and parameters
 
