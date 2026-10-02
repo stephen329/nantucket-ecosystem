@@ -4,7 +4,7 @@ As of 2026-10-02, from the snapshot of `stephen329/odin` @ `c76ccb2`, a Google D
 
 ## Decisions needed
 
-1. **Moving the authority out of Odin (owner proposed this 2026-10-02; not yet done).** It needs a dated amendment: `amendments/2026-10-02-strategy-repository-designation.md` is drafted and **Proposed**. What depends on `docs/strategy/` in Odin today:
+1. **Moving the authority out of Odin (approved 2026-10-02; takes effect at the Odin cutover, not yet done).** The amendment is `amendments/2026-10-02-strategy-repository-designation.md`. What depends on `docs/strategy/` in Odin today:
    - **Tests** that read the files: `src/lib/roadmap/amendment-status.test.ts` and `items.test.ts` (both read `docs/strategy/amendments/`).
    - **CI workflows:** `brand-skill.yml` (also triggers on `docs/strategy/**`), `blog-brand.yml` (reads the C&C ratified strings), and the doc-citations workflow.
    - **Scripts:** `scripts/brands/check-skill-citations.ts`, `check-header-coverage.ts`, `scripts/docs/check-line-citations.ts`, `scripts/agents/design-consistency.py`.

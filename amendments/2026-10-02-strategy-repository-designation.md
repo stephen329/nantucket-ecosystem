@@ -1,12 +1,12 @@
 # Amendment — this repository is the designated strategy repository; the strategy and brand records move out of Odin
 
 - **Date raised:** 2026-10-02
-- **Status:** **Proposed — awaiting owner approval.**
+- **Status:** **Approved and ratified — Stephen Maury, 2026-10-02.** Given in chat at 11:11 ET with the instruction that Claude carry out the steps, and recorded here by Claude. The designation takes effect at the Odin cutover (Change, step 4).
 - **Owner:** Stephen Maury (executive sponsor)
 - **Affects:** Version 1.0 decision record ("authoritative systems" in the change protocol); strategy §12 deliverable 14; `brands/README.md` rule 3; `brands/skill/README.md` (publishing steps); and, in `stephen329/odin`: `docs/strategy/`, `src/lib/roadmap/` tests, `.github/workflows/brand-skill.yml`, `blog-brand.yml`, the doc-citations workflow, `scripts/brands/`, `scripts/docs/check-line-citations.ts`, `scripts/agents/design-consistency.py`, `CLAUDE.md`, `AGENTS.md`. Per-repo brand context blocks in `cnc-web-fe`, `nrbe`, `nantuckethouses-platform` (named in `brands/README.md` rule 3) and `hellonantucket`.
 
 <!--
-Drafted by Claude from the owner's 2026-10-02 direction to move these documents out of Odin. Not approved. Nothing below is in effect until the owner replaces the Status bullet.
+Drafted by Claude from the owner's 2026-10-02 direction to move these documents out of Odin. Approved by the owner in chat the same day; see the Approval section.
 -->
 
 ## Reason
@@ -74,4 +74,6 @@ Until the Odin cutover merges, Odin remains authoritative and this repository is
 
 ## Approval
 
-<!-- Filled in by the owner when approved: who, when, and the PR link. Resolve the [DECIDE] above first. -->
+Approved by Stephen Maury on 2026-10-02 at 11:11 ET, in chat, in response to a list of the remaining steps (merge the two open pull requests, approve this amendment, and proceed with the Odin work): "You are authorized for all steps." Recorded here by Claude. The mechanism choices above are the owner's answers given earlier in the same conversation.
+
+One item stays open under `[DECIDE]`: who performs each pin bump. This approval does not assign it. The designation does not take effect until the Odin cutover pull request merges; until then Odin's `docs/strategy/` remains authoritative.
