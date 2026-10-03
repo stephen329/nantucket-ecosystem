@@ -12,7 +12,14 @@ All files except the ones listed under "Written for this repository" were copied
 
 ## Written for this repository
 
-`README.md`, `GOVERNANCE.md`, `PROVENANCE.md`, `GAPS.md`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/CODEOWNERS`, `amendments/README.md` (generated from the Status bullets), `amendments/TEMPLATE.md`, `amendments/2026-10-02-strategy-repository-designation.md` (proposed), `resources/README.md`, `tools/` (see `tools/README.md` for its own provenance), `.github/workflows/guards.yml`, `package.json`, `yarn.lock`, `.nvmrc`, `.gitignore`.
+`README.md`, `GOVERNANCE.md`, `DEVELOPMENT_REVIEW.md`, `AGENTS.md`, `CLAUDE.md`,
+`PROVENANCE.md`, `GAPS.md`, `.github/PULL_REQUEST_TEMPLATE.md`,
+`.github/CODEOWNERS`, `amendments/README.md` (generated from the Status bullets),
+`amendments/TEMPLATE.md`,
+`amendments/2026-10-02-strategy-repository-designation.md`,
+`amendments/2026-10-03-portfolio-development-review-policy.md`,
+`resources/README.md`, `tools/` (see `tools/README.md` for its own provenance),
+`.github/workflows/guards.yml`, `package.json`, `yarn.lock`, `.nvmrc`, `.gitignore`.
 
 **Edited after copying:** the eight `<!-- law: ... -->` markers under `brands/skill/` (five files) now cite `nantucket-ecosystem-integrated-strategy.md` instead of `docs/strategy/nantucket-ecosystem-integrated-strategy.md`, so the moved checker can resolve them. No other copied file was edited.
 

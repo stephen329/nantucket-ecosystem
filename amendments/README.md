@@ -25,5 +25,6 @@ Generated from each file's `- **Status:**` bullet on 2026-10-02 (copied amendmen
 | 2026-09-20 | Approved | [Odin person identity and historical NH aliases](2026-09-20-odin-person-identity-and-nh-aliases.md) |
 | 2026-09-21 | Approved | [Amendment — home guides are a Congdon & Coleman surface](2026-09-21-home-guides-are-a-congdon-coleman-surface.md) |
 | 2026-10-02 | Approved | [Amendment — this repository is the designated strategy repository; the strategy and brand records move out of Odin](2026-10-02-strategy-repository-designation.md) |
+| 2026-10-03 | Approved | [Amendment — portfolio development review policy is canonical in this repository](2026-10-03-portfolio-development-review-policy.md) |
 
-18 approved, 3 proposed, 0 unrecognized.
+19 approved, 3 proposed, 0 unrecognized.
