@@ -45,6 +45,9 @@ review authority and strengthens the minimum reviewer/round-accounting contract.
 - `nrbe`: add `AGENTS.md` and `CLAUDE.md`.
 - `nantuckethouses-platform`: `AGENTS.md` and `CLAUDE.md`.
 - `hellonantucket`: add `AGENTS.md` and update `CLAUDE.md`.
+- Local Studio `studio-review-loop` skill: replace duplicated reviewer,
+  round-accounting, escalation, and completion rules with a pointer to the
+  canonical policy while retaining only Studio helper mechanics.
 
 Each downstream change depends on this amendment and `DEVELOPMENT_REVIEW.md`
 landing on `nantucket-ecosystem/main`.

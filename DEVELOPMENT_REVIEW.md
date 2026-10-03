@@ -96,10 +96,16 @@ remain separate gates. If a required reviewer is unavailable, record `required
 review unmet`, name the missing reviewer and smallest recovery action, and keep
 merge blocked.
 
-## Downstream repository instruction
+## Downstream instruction surfaces
 
 Each repository in scope must link to this file from its agent instructions and
 state that it is the portfolio minimum. Local instructions should contain only
 repository-specific additions, not a forked copy of this policy. If this private
 repository cannot be accessed, the policy is unavailable rather than optional;
 record the blocked dependency and do not reconstruct it from memory.
+
+Any local skill, helper, automation, or other non-repository instruction surface
+that governs portfolio development review must also link to this file and defer
+to it for reviewer selection, round accounting, escalation, and completion. Such
+an instruction surface may explain its own mechanics but must not duplicate or
+weaken the policy.
