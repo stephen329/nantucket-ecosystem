@@ -17,6 +17,8 @@ This repository is the "designated strategy repository" called for by strategy Â
 | `resources/` | Pointers to shared resources that live elsewhere (brand guide PDFs, related docs) |
 | `tools/` | The checks that guard these records, moved from Odin; run in CI on every PR (see `tools/README.md`) |
 | `GOVERNANCE.md` | Authority order, how changes are made, what the markers mean |
+| `DEVELOPMENT_REVIEW.md` | Portfolio minimum for independent review, risk, remediation rounds, escalation, and completion |
+| `AGENTS.md` / `CLAUDE.md` | Agent entrypoints that require the canonical development-review policy |
 | `PROVENANCE.md` | Where every file came from, and what has not moved yet |
 | `GAPS.md` | Open gaps and decisions as of 2026-10-02 |
 
@@ -26,3 +28,6 @@ This repository is the "designated strategy repository" called for by strategy Â
 2. A decision is operative only once its record is on `main`.
 3. Ratified strings are verbatim. See `brands/README.md`.
 4. Designating this repository as the authority was approved on 2026-10-02 (`amendments/2026-10-02-strategy-repository-designation.md`) and takes effect when Odin's copy is cut over. Until then Odin's `docs/strategy/` is authoritative and this repository is a mirror. Read `PROVENANCE.md` before relying on it.
+5. The portfolio development-review minimum is `DEVELOPMENT_REVIEW.md`, approved
+   on 2026-10-03. Downstream repositories link to it and may add stricter rules,
+   never weaker ones. Grok is not part of that process.

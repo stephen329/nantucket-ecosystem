@@ -9,6 +9,17 @@ Derived from the Version 1.0 decision record, strategy §8 (gate parameters and 
 3. Brand records in `brands/` (canonical naming, ratified strings, register addenda).
 4. Brand guides, the `nantucket-brands` skill, and per-repo context blocks (CLAUDE.md / AGENTS.md brand sections). These restate the records above and never override them.
 
+## Development review authority
+
+[`DEVELOPMENT_REVIEW.md`](./DEVELOPMENT_REVIEW.md) is the portfolio minimum for
+implementation review. Per-repository agent instructions may add stricter checks,
+reviewers, or release gates; they cannot weaken or replace the portfolio minimum.
+Grok is not part of the review process.
+
+This review-policy authority is separate from the strategy authority order above:
+it governs how changes are reviewed, not product strategy, brand law, or record-
+class ownership.
+
 ## What requires an amendment
 
 Per the decision record's change protocol: changes to hard gates, cohort definitions, consent rules, stage dates, or authoritative systems require a dated amendment recording the reason, owner, affected metrics, and approval. Setting a gate parameter for the first time counts as a change. Each parameter is fixed before the window it governs opens and is never set or revised once the results it governs are visible to the person setting it. Version 1.0 stays recoverable and is never silently overwritten.
