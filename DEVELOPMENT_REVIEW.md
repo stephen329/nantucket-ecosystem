@@ -60,9 +60,10 @@ and the resulting behavioral correction commit or consolidated commit batch.
 Cosmetic or equivalence-only corrections do not increment the counter, but still
 need verification on the resulting SHA.
 
-Count substantive remediation rounds against the original task scope. Renaming a
-task, opening another worktree or pull request, changing writers, splitting the
-same scope, or superseding a candidate does not reset the count.
+Count substantive remediation rounds against the original task scope. Starting a
+new task, cutting another branch, opening another worktree or pull request,
+changing writers, splitting the same scope, or superseding a candidate does not
+reset the count.
 
 After the third substantive remediation round, required reviewers may verify the
 resulting candidate. If another substantive correction is needed, stop autonomous
