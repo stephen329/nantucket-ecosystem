@@ -1,7 +1,9 @@
 # Portfolio development review policy
 
-**Owner:** Stephen Maury  
-**Approved:** 2026-10-03  
+**Owner:** Stephen Maury
+
+**Approved:** 2026-10-03
+
 **Applies to:** `nantucket-ecosystem`, `odin`, `cnc-web-fe`, `nrbe`,
 `nantuckethouses-platform`, and `hellonantucket`
 
