@@ -21,10 +21,10 @@ file, follow the stricter rule and record the conflict for reconciliation.
   candidate needs an independent Codex reviewer and, when high risk, an
   independent Claude reviewer. When a required reviewer is from the same model
   family as the implementer, it must be a fresh instance. A same-family review
-  never substitutes for a reviewer required above. Required reviewers receive
-  the requirements, diff, code, and verification evidence, not the implementer's
-  reasoning transcript or another reviewer's findings before their initial
-  report.
+  never substitutes for a reviewer of a different model family required above.
+  Required reviewers receive the requirements, diff, code, and verification
+  evidence, not the implementer's reasoning transcript or another reviewer's
+  findings before their initial report.
 - Grok is not part of this process. Do not request, run, or count a Grok review as
   required review, escalation, substitution, compensating evidence, or a merge
   gate.
