@@ -4,8 +4,8 @@
 
 **Approved:** 2026-10-03
 
-**Applies to:** `nantucket-ecosystem`, `odin`, `cnc-web-fe`, `nrbe`,
-`nantuckethouses-platform`, and `hellonantucket`
+**Applies to:** `nantucket-ecosystem`, `odin`, `cnc-web-fe`, `nr-web-fe`,
+`nrbe`, `nantuckethouses-platform`, and `hellonantucket`
 
 This is the minimum development-review policy for the Nantucket portfolio. A
 repository may add stricter checks or reviewers, but it may not weaken, replace,
@@ -17,11 +17,14 @@ file, follow the stricter rule and record the conflict for reconciliation.
 - Every candidate requires an independent Codex review.
 - A high-risk candidate also requires an independent Claude review of the same
   final commit.
-- The implementer's self-review does not satisfy either requirement. A Codex
-  implementer needs a fresh Codex reviewer; a Claude implementer needs a fresh
-  Claude reviewer. Required reviewers receive the requirements, diff, code, and
-  verification evidence, not the implementer's reasoning transcript or another
-  reviewer's findings before their initial report.
+- The implementer's self-review does not satisfy either requirement. Every
+  candidate needs an independent Codex reviewer and, when high risk, an
+  independent Claude reviewer. When a required reviewer is from the same model
+  family as the implementer, it must be a fresh instance. A same-family review
+  never substitutes for a reviewer required above. Required reviewers receive
+  the requirements, diff, code, and verification evidence, not the implementer's
+  reasoning transcript or another reviewer's findings before their initial
+  report.
 - Grok is not part of this process. Do not request, run, or count a Grok review as
   required review, escalation, substitution, compensating evidence, or a merge
   gate.

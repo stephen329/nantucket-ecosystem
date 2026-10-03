@@ -3,7 +3,7 @@
 - **Date raised:** 2026-10-03
 - **Status:** **Approved and ratified — Stephen Maury, 2026-10-03.** Directed in chat: record the updated review process in `nantucket-ecosystem` and make every other portfolio repository refer to it.
 - **Owner:** Stephen Maury (executive sponsor)
-- **Affects:** `GOVERNANCE.md`, `DEVELOPMENT_REVIEW.md`, agent instructions in this repository, and agent instructions in `stephen329/odin`, `stephen329/cnc-web-fe`, `stephen329/nrbe`, `stephen329/nantuckethouses-platform`, and `stephen329/hellonantucket`.
+- **Affects:** `GOVERNANCE.md`, `DEVELOPMENT_REVIEW.md`, agent instructions in this repository, and agent instructions in `stephen329/odin`, `stephen329/cnc-web-fe`, `stephen329/nr-web-fe`, `stephen329/nrbe`, `stephen329/nantuckethouses-platform`, and `stephen329/hellonantucket`.
 
 ## Reason
 
@@ -41,6 +41,7 @@ review authority and strengthens the minimum reviewer/round-accounting contract.
 - Odin: `AGENTS.md` and `CLAUDE.md`, coordinated through the active strategy-
   repository cutover rather than a competing writer.
 - `cnc-web-fe`: `AGENTS.md` and `CLAUDE.md`.
+- `nr-web-fe`: `AGENTS.md` and `CLAUDE.md`.
 - `nrbe`: add `AGENTS.md` and `CLAUDE.md`.
 - `nantuckethouses-platform`: `AGENTS.md` and `CLAUDE.md`.
 - `hellonantucket`: add `AGENTS.md` and update `CLAUDE.md`.
