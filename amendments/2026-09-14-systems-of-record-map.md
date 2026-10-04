@@ -5,7 +5,7 @@
   proposal* and is not in effect. It records a documentary gap found while
   answering an architecture question about database unification, and proposes
   text to close it. Nothing below binds until the owner approves it in the
-  approval block.
+  approval block through an externally verifiable approval source.
 - **Status:** **Proposed — awaiting owner approval.** Per the 2026-08-13
   amendment, merging files a proposal without ratifying it; approval is given
   by the owner and recorded in the approval block, not by the act of merging.
@@ -473,6 +473,8 @@ Recorded for the register; none of it is actioned by this amendment.
 - **Date:** —
 - **Recorded by:** —
 
-Until this block is completed by the owner, the text above is a proposal.
-Strategy §2 continues to read as it does today, and the 2026-09-04 carve-out
-continues to read as written.
+Until this block is completed from an externally verifiable owner-approval source,
+the text above is a proposal. Strategy §2 continues to read as it does today, and
+the 2026-09-04 carve-out continues to read as written. In particular, the proposed
+map cannot decide the open lease/payment governing-record conflict or authorize a
+class cutover, transaction release, migration, or source shutdown.
