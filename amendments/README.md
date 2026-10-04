@@ -1,6 +1,6 @@
 # Amendment index
 
-Generated from each file's `- **Status:**` bullet on 2026-10-03 (copied amendments are a snapshot from `stephen329/odin` @ `c76ccb2`; the 2026-10-02 designation and 2026-10-03 development-review amendments were written for this repository). The amendment file is the record; this table is a convenience and can go stale.
+Generated from each file's `- **Status:**` bullet on 2026-10-03 (copied amendments began as a snapshot from `stephen329/odin` @ `c76ccb2`; the systems-of-record map was reconciled through Odin commit `edbe8d35601d88be1273e968da4a1667a4e6a5f3`; the 2026-10-02 designation and 2026-10-03 development-review amendments were written for this repository). The amendment file is the record; this table is a convenience and can go stale.
 
 | Date | Status | Amendment |
 |---|---|---|

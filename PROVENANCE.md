@@ -21,7 +21,7 @@ All files except the ones listed under "Written for this repository" were copied
 `resources/README.md`, `tools/` (see `tools/README.md` for its own provenance),
 `.github/workflows/guards.yml`, `package.json`, `yarn.lock`, `.nvmrc`, `.gitignore`.
 
-**Edited after copying:** the eight `<!-- law: ... -->` markers under `brands/skill/` (five files) now cite `nantucket-ecosystem-integrated-strategy.md` instead of `docs/strategy/nantucket-ecosystem-integrated-strategy.md`, so the moved checker can resolve them. No other copied file was edited.
+**Edited after copying:** the eight `<!-- law: ... -->` markers under `brands/skill/` (five files) now cite `nantucket-ecosystem-integrated-strategy.md` instead of `docs/strategy/nantucket-ecosystem-integrated-strategy.md`, so the moved checker can resolve them. `amendments/2026-09-14-systems-of-record-map.md` was reconciled byte-for-byte with the proposed version reviewed and merged in Odin PR 647 at commit `edbe8d35601d88be1273e968da4a1667a4e6a5f3`, carrying forward the externally verifiable approval and release safeguards added upstream before the Odin cutover.
 
 ## Not yet moved
 
