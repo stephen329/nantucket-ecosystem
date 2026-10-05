@@ -41,24 +41,58 @@ policy. Uncertainty about whether a change is high risk is resolved as high risk
 1. Run the repository's conflict preflight and assign one writer before editing.
 2. The writer implements, self-reviews, runs the required checks, commits only the
    intended change, and records the full candidate SHA and evidence.
-3. Freeze that candidate while its required independent first passes run. For
+3. Freeze that candidate before requesting review. Required checks are green, or a
+   repository-owner exception names the exact check, SHA, reason, and compensating
+   evidence. Do not push to the candidate while its required first passes run. For
    high-risk work, request the independent Codex and Claude reviews in parallel
-   where supported. Reports on different SHAs cannot be combined.
-4. Record every finding with its reviewed SHA, severity, affected behavior,
-   failure path, and disposition. Valid findings are fixed; disputed findings are
-   answered with reproducible evidence; accepted residual risk requires a recorded
-   owner decision.
-5. Any resulting commit requires final review records bound to the new full SHA.
-   Narrow, non-semantic repairs may receive scoped re-verification when the
-   repository permits it. Changes to who may act, when a gate is satisfied, what a
-   check accepts, or how an exception is granted require a full pass.
+   where supported. A report on a different SHA does not count and cannot be
+   combined with a report on the frozen SHA.
+4. Record every finding with its reviewed SHA, class, severity, affected behavior,
+   failure path, and disposition. Only a blocking finding may produce a remediation
+   commit. Disputed blocking findings are answered with reproducible evidence;
+   accepted residual risk requires a recorded owner decision.
+5. Blocking fixes land as one consolidated commit, then each required reviewer
+   re-verifies that delta. A full reread is required only when the fix changes who
+   may act, when a gate is satisfied, what a check accepts, how an exception is
+   granted, or the meaning of a governing rule.
+
+## Finding classes
+
+A blocking finding is a confirmed defect that changes behavior, weakens or
+misstates a gate, makes a false claim about a ratified record, or breaks a path a
+session will follow. A non-blocking finding is style, structure, a suggestion, or
+follow-up work. Record non-blocking findings on the pull request. Do not "fix"
+them in the same candidate: that commit invalidates the reviews without buying
+safety. A reviewer that does not label a finding blocking or non-blocking has not
+finished the report.
+
+## Reviewer time box
+
+A required reviewer has 30 minutes from a successful request to return a report on
+the frozen SHA. If the report is missing, empty, malformed, or bound to another
+SHA, retry once through the same reviewer or its authorized wake-up. If the retry
+does not return a valid report, record `required review unmet`, name the reviewer
+and the smallest recovery action, and stop polling. Do not substitute Grok,
+self-review, or an extra reviewer of a family the policy does not require.
+Waiting is not a review round.
+
+## Review shape
+
+Match the pass to the change. An index, an unmodified supplied asset, a link, or
+another docs-only claim is reviewed against a checklist of those claims, not by a
+line audit of unrelated prose. Authentication, authorization, identity, privacy,
+security, consent, legal disclosures, payments, production data or migrations,
+destructive operations, authoritative-system cutovers, external side effects,
+cross-repository contracts, and changes to governing meaning still get a full
+pass. Uncertainty about the class is resolved as a full pass.
 
 ## Round accounting and escalation
 
 A substantive remediation round is one frozen candidate, its required reports,
-and the resulting behavioral correction commit or consolidated commit batch.
-Cosmetic or equivalence-only corrections do not increment the counter, but still
-need verification on the resulting SHA.
+and the resulting blocking-fix commit or consolidated commit batch. A recorded
+non-blocking finding with no commit is not a round. A cosmetic commit made
+despite that rule still needs verification on the resulting SHA, and it counts as
+a round if it was not necessary to correct a blocking finding.
 
 Count substantive remediation rounds against the original task scope. Starting a
 new task, cutting another branch, opening another worktree or pull request,
