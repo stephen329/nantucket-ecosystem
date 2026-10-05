@@ -29,5 +29,5 @@ This repository is the "designated strategy repository" called for by strategy Â
 3. Ratified strings are verbatim. See `brands/README.md`.
 4. Designating this repository as the authority was approved on 2026-10-02 (`amendments/2026-10-02-strategy-repository-designation.md`) and takes effect when Odin's copy is cut over. Until then Odin's `docs/strategy/` is authoritative and this repository is a mirror. Read `PROVENANCE.md` before relying on it.
 5. The portfolio development-review minimum is `DEVELOPMENT_REVIEW.md`, approved
-   on 2026-10-03. Downstream repositories link to it and may add stricter rules,
-   never weaker ones. Grok is not part of that process.
+   on 2026-10-03 and amended on 2026-10-05. Downstream repositories link to it and
+   may add stricter rules, never weaker ones. Grok is not part of that process.

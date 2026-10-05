@@ -1,7 +1,7 @@
 # Amendment — bound review rounds so a non-blocking note cannot restart them
 
 - **Date raised:** 2026-10-05
-- **Status:** **Proposed — awaiting owner approval.**
+- **Status:** **Approved and ratified — Stephen Maury, 2026-10-05.** Owner direction in chat: submit the change for the required review and merge after a clean round.
 - **Owner:** Stephen Maury (executive sponsor)
 - **Affects:** `DEVELOPMENT_REVIEW.md`; the 2026-10-03 portfolio development-review amendment; agent sessions that review `odin`, `cnc-web-fe`, `nr-web-fe`, `nrbe`, `nantuckethouses-platform`, and `hellonantucket`.
 
@@ -13,14 +13,16 @@ Review rounds have run for hours without a new safety finding. The 2026-10-03 po
 
 `DEVELOPMENT_REVIEW.md` keeps the current minimum: an independent Codex review for every candidate, an independent Claude review for high-risk work on the same final SHA, no Grok review, and a stop after three substantive remediation rounds.
 
-It adds four bounds:
+It adds these bounds and safeguards:
 
 1. Freeze the candidate before requesting review. A report on any other SHA does not count.
 2. Only a blocking finding may produce a remediation commit. Non-blocking findings are recorded and do not move the SHA.
-3. After one consolidated fix, reviewers re-check the delta. A full reread is required only when the fix changes a gate, an exception, or governing meaning.
-4. A required reviewer has 30 minutes and one retry. No valid report after that is `required review unmet`, not another hour of polling.
+3. After one consolidated low-risk fix, reviewers may re-check a SHA-bound delta as their final record. High-risk fixes and changes to gates, checks, exceptions, actors, or governing meaning require a full pass on the final SHA.
+4. The reviewer assigns each finding's class. Findings whose failure paths affect high-risk work, critical/high-severity findings, and missing-required-evidence findings are blocking; the owner must record any override.
+5. A required reviewer has 30 minutes per acknowledged attempt and one retry. No valid report after that is `required review unmet`, not another hour of polling. A late blocking finding still requires disposition.
+6. The reviewed head and base are frozen. A rebase, base merge, conflict resolution, CI correction, or other tree change creates a new candidate.
 
-Docs-only indexes and unmodified supplied assets use a checklist. Auth, consent, payment, privacy, migrations, and governing-rule meaning still get a full pass. Uncertainty stays a full pass.
+Only index rows, unmodified supplied assets, and link targets may use a reviewer-owned checklist, and the full changed diff is still read. Every high-risk category in the canonical policy gets a full pass. Uncertainty stays a full pass.
 
 ## Affected metrics, gates, and parameters
 
@@ -28,8 +30,8 @@ No product metric, cohort definition, consent rule, or stage date changes. This 
 
 ## Copies that must change with it
 
-None. Downstream repositories link to `DEVELOPMENT_REVIEW.md` and must not copy it. The local Studio review skill, if it restates round accounting, must keep deferring to this file rather than duplicating the new bounds.
+This pull request updates `README.md` and the amendment index to record the amended approval date and status. Downstream repositories link to `DEVELOPMENT_REVIEW.md` and must not copy it. The local Studio review skill, if it restates round accounting, must keep deferring to this file rather than duplicating the new bounds.
 
 ## Approval
 
-Proposed by Stephen Maury on 2026-10-05 with the instruction to submit the review-process changes and rationale as a pull request. This status is not approval. The owner approves in the pull request.
+Approved by Stephen Maury in chat on 2026-10-05 with the instruction to submit the change for the required review and merge after a clean round. This amendment and the revised policy become effective together when this pull request merges. Candidates frozen before that merge remain governed by the pre-change policy unless the owner explicitly restarts them under this amendment.
