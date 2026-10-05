@@ -1,6 +1,6 @@
 # Resources
 
-Shared resources that belong with the ecosystem plan but are **not stored in this repository**. Each entry points to where it lives today. Moving one in is a reviewed change.
+Shared resources that belong with the ecosystem plan. Brand-guide HTML exports are stored in this repository under `brands/assets/`. Marketing plans, the earlier Drive PDFs, and legal records elsewhere are not. Moving one of those in is a reviewed change.
 
 ## Brand guides
 
