@@ -1,6 +1,6 @@
 # Gaps and open decisions
 
-As of 2026-10-02, from the snapshot of `stephen329/odin` @ `c76ccb2`, a Google Drive search, and earlier chat history. Each item says where the evidence came from. Items marked "not verified" come from a chat summary, not from a file in this repository.
+As of 2026-10-02, from the snapshot of `stephen329/odin` @ `c76ccb2`, a Google Drive search, and earlier chat history, with brand-guide status updated 2026-10-05. Each item says where the evidence came from. Items marked "not verified" come from a chat summary, not from a file in this repository.
 
 ## Decisions needed
 
@@ -19,9 +19,9 @@ As of 2026-10-02, from the snapshot of `stephen329/odin` @ `c76ccb2`, a Google D
 
 ## Missing documents
 
-6. **Per-brand style guides are not in any repo.** Found in Google Drive: the NantucketRentals 2026 brand guide, Revision 2.0 (PDF, 2026-09-17), and the C&C Brand & Identity Guidelines, Third Edition (PDF, 2026-09-09). Not found by my searches: a Hello Nantucket brand guide, and a Nantucket Houses style guide (the NH marketing plan refers to "Nantucket Modern (style guide)"). They may exist under other names.
-7. **Design tokens exist only for Congdon & Coleman** (`brands/assets/congdon-coleman/tokens.json`). Palettes for NantucketRentals and Nantucket Houses appear in a PDF and a Google Doc respectively; Hello has none that I found.
-8. **No per-brand folders** for NantucketRentals, Nantucket Houses, or Hello. Only C&C has an `assets/` folder. Hello has a decision-register addendum.
+6. **Per-brand guide coverage is now recorded, with different statuses.** Owner-supplied HTML exports for Congdon & Coleman, NantucketRentals.com, and Nantucket Houses are stored under `brands/assets/`; their identity evidence is in `PROVENANCE.md`. The earlier C&C and NantucketRentals.com Drive PDFs remain the earlier located copies. Hello has an owner-supplied site-mockups export, not a ratified style guide; `stephen329/hellonantucket` `index.html` remains the working guide until reconciliation. See `resources/README.md` for the index.
+7. **Machine-readable design tokens remain committed only for Congdon & Coleman** (`brands/assets/congdon-coleman/tokens.json`). The NantucketRentals.com and Nantucket Houses exports contain palette guidance but no separate token files here. The Hello export is unratified mockup evidence, not a token authority.
+8. **Per-brand asset folders now exist** for Congdon & Coleman, NantucketRentals.com, Nantucket Houses, and Hello Nantucket under `brands/assets/`. Their contents do not by themselves change the authority order in `README.md` or ratify export copy.
 9. **Related documents outside `docs/strategy/`** that may belong here or be linked from `resources/`: Odin `docs/hello/`, `docs/marketing/`, `docs/home-guide/`, `docs/legal/`, and the Nantucket Houses 90-day marketing plan and Meta creative pack (Google Docs).
 
 ## Housekeeping
