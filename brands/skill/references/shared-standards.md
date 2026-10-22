@@ -4,6 +4,25 @@
 
 Rules that belong to no single brand. Everything here is designed to be enforceable mechanically — as a canonical string, a routing rule, or a lint check — not remembered.
 
+## Natural writing standard
+
+Write like a knowledgeable person doing the work, not a polished marketing
+system. Use concrete facts and specific observations instead of abstract framing
+or elevated language that adds little meaning. Vary sentence length and
+structure. A short, direct sentence is better than a smooth one that adds no
+information.
+
+Do not force prose into symmetrical sections, repeated card patterns, or evenly
+weighted explanations merely for visual polish. Use structured components when
+they genuinely improve comparison, scanning, or task completion. State
+limitations once, plainly. Do not narrate the product, platform, or content while
+delivering the information unless that explanation is necessary to the
+customer's task. Prefer clarity and firsthand specificity over polish.
+
+This standard does not override an individual brand's role, voice, content
+boundaries, or functional requirements. Specificity must come from the facts
+appropriate to that brand.
+
 ## Sending-brand matrix
 
 One message class → exactly one sending brand → one consent purpose. `[STRATEGY §4: transcribe full matrix]` Working skeleton:

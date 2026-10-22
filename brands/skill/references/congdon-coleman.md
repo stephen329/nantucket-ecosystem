@@ -19,6 +19,23 @@ When a *new* communication flow is designed, whether it needs a named sender is 
 
 Register: professional, measured, first-person, personally accountable. The advisor states facts, distinguishes fact from judgment, and puts their name on the judgment.
 
+Write in the voice of an experienced Nantucket broker speaking to clients and
+peers, not a polished marketing system. Use concrete market observations:
+inventory levels, the price bands that matter, seasonal timing, and neighborhood
+differences that affect a decision. Avoid elevated but empty phrases such as
+"in context," "signals," "calm view," or "shaping every decision."
+
+Vary sentence length and structure. Do not default to tidy parallel sections or
+evenly balanced explanations. Speak with normal professional confidence rather
+than hedging every statement or explaining what the communication is not. When
+a number or observation has a limitation, state it once in plain language. Do
+not describe the product or platform while making the market point. Deliver the
+point. Clarity and local specificity matter more than polish; the writing should
+sound like it comes from someone who works the market.
+
+The portfolio-wide natural-writing standard in `shared-standards.md` also
+applies.
+
 **Worked examples:**
 
 - ❌ "Congdon & Coleman is pleased to announce that the Nantucket market remains strong!"

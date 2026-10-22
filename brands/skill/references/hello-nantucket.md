@@ -21,6 +21,11 @@ The stance is *durable* because it must survive off-season, storms, crowding com
 
 **Register:** first-person-plural editorial "we" is fine; no individual byline required except contributor pieces. Contractions yes. Exclamation points rare. Never "content" language ("check out our latest post!").
 
+The natural-writing standard in `shared-standards.md` applies. For Hello,
+firsthand specificity means recognizable island details, seasonal experience,
+and local observation. It does not mean broker voice, listings, price-band
+analysis, valuation, or recurring real-estate and rental-market intelligence.
+
 ## Publisher and affiliation disclosure
 
 This is the highest-scrutiny element of the entire portfolio, and common ownership is never concealed — that much is settled (§3: Hello "must not be described as unaffiliated or institutionally independent").
