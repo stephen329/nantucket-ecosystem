@@ -4,25 +4,6 @@
 
 Rules that belong to no single brand. Everything here is designed to be enforceable mechanically — as a canonical string, a routing rule, or a lint check — not remembered.
 
-## Natural writing standard
-
-Write like a knowledgeable person doing the work, not a polished marketing
-system. Use concrete facts and specific observations instead of abstract framing
-or elevated language that adds little meaning. Vary sentence length and
-structure. A short, direct sentence is better than a smooth one that adds no
-information.
-
-Do not force prose into symmetrical sections, repeated card patterns, or evenly
-weighted explanations merely for visual polish. Use structured components when
-they genuinely improve comparison, scanning, or task completion. State
-limitations once, plainly. Do not narrate the product, platform, or content while
-delivering the information unless that explanation is necessary to the
-customer's task. Prefer clarity and firsthand specificity over polish.
-
-This standard does not override an individual brand's role, voice, content
-boundaries, or functional requirements. Specificity must come from the facts
-appropriate to that brand.
-
 ## Sending-brand matrix
 
 One message class → exactly one sending brand → one consent purpose. `[STRATEGY §4: transcribe full matrix]` Working skeleton:
@@ -121,3 +102,22 @@ alone.
 - Lintable rules: canonical-name table (string match — armed in cnc-web-fe, `[DECIDE: implementation tickets per repo]` elsewhere); sending-brand header on outbound templates in nrbe (routing-layer check `[DECIDE: implementation ticket]`).
 - **Disclosure-string presence on Hello surfaces is NOT lintable yet**, and was listed here as though it were. It contradicted this file's own disclosure-library rule above: nothing in that library is ratified, §12 item 2 is open, and the strings "must not be enforced by lint, template check, or schema validation" until it closes. A template check is exactly the enforcement that rule forbids. It becomes lintable when §12 closes and the strings are ratified — not before.
 - Run `references/red-team-battery.md` on any guideline, template, or flow change.
+
+## Natural writing standard
+
+Write like a knowledgeable person doing the work, not a polished marketing
+system. Use concrete facts and specific observations instead of abstract framing
+or elevated language that adds little meaning. Vary sentence length and
+structure. A short, direct sentence is better than a smooth one that adds no
+information.
+
+Do not force prose into symmetrical sections, repeated card patterns, or evenly
+weighted explanations merely for visual polish. Use structured components when
+they genuinely improve comparison, scanning, or task completion. State
+limitations once, plainly. Do not narrate the product, platform, or content while
+delivering the information unless that explanation is necessary to the
+customer's task. Prefer clarity and firsthand specificity over polish.
+
+This standard does not override an individual brand's role, voice, content
+boundaries, or functional requirements. Specificity must come from the facts
+appropriate to that brand.
