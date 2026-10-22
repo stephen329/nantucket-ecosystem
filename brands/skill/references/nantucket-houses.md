@@ -18,6 +18,11 @@ Calm, competent, brief. The app speaks like an excellent house manager: anticipa
   **None of this is sendable today**, and the narrowing changes no send: the classes are proposed and unratified, none has a frequency-cap cell (the message-class dimension is fail-closed), and `nhAdvertisingCleared()` still blocks both showcase members on four unrecorded prerequisites. Recorded in `../../../amendments/2026-09-16-per-brand-marketing-classes.md`.
 - **Owner mode:** professional and factual. Owners are managing an asset; give them signal (bookings, payments, property status) without brokerage vocabulary or upsell.
 
+The natural-writing standard in `shared-standards.md` applies. Here, specificity
+means useful stay, home, booking, payment, and property-status facts. It does not
+permit market commentary or brokerage language. Structured interface content
+remains appropriate when it improves scanning or helps the user complete a task.
+
 **Worked examples:**
 
 - ❌ "🎉 Your dream vacation starts NOW! Check out everything Nantucket Houses has to offer!"

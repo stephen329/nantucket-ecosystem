@@ -8,6 +8,11 @@ NantucketRentals.com is the marketplace: search, listing, booking, lease, and pa
 
 Clear, direct, frictionless. Every sentence either moves the transaction forward or answers a question the renter actually has at that step. No island lifestyle prose (that's Hello's job), no advisory framing (C&C's job), no house-manager warmth (NH's job).
 
+The natural-writing standard in `shared-standards.md` applies. Here, specificity
+means inventory facts, dates, prices, terms, and the information needed to book;
+it does not mean broker interpretation or market commentary. Structured content
+remains appropriate when it makes search, comparison, booking, or payment easier.
+
 **Worked examples:**
 
 - ❌ "Imagine waking up to the sound of waves at this stunning Sconset retreat..."
