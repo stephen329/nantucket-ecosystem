@@ -33,6 +33,13 @@ not describe the product or platform while making the market point. Deliver the
 point. Clarity and local specificity matter more than polish; the writing should
 sound like it comes from someone who works the market.
 
+This voice guidance does not override the named-person or fact-versus-judgment
+requirements above. It also does not shorten or displace required methodology,
+comparables, limitations language, legal disclosures, or owner sign-off. State
+an ordinary limitation on a market number or observation once when that is
+enough; repeat or place required language wherever the governing template,
+legal requirement, or communication format calls for it.
+
 The portfolio-wide natural-writing standard in `shared-standards.md` also
 applies.
 
