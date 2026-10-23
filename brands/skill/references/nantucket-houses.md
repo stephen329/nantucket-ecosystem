@@ -23,6 +23,13 @@ means useful stay, home, booking, payment, and property-status facts. It does no
 permit market commentary or brokerage language. Structured interface content
 remains appropriate when it improves scanning or helps the user complete a task.
 
+Supporting copy must add a material fact, constraint, or consequence that the
+interface does not already communicate. Do not narrate an obvious control,
+repeat its label in sentence form, or tell people to use an option only if it is
+useful. If removing a sentence does not change a decision, prevent an error, or
+clarify what happens next, remove it. This is the test for tautological and
+low-information interface copy.
+
 **Worked examples:**
 
 - ❌ "🎉 Your dream vacation starts NOW! Check out everything Nantucket Houses has to offer!"
@@ -66,13 +73,14 @@ Property-specific rental discovery and home-detail surfaces may use photographs 
 ## Cross-brand touchpoints
 
 - Listing attribution string (when a property's brokerage identity must appear): canonical string in `shared-standards.md`. That is the only place brokerage identity appears in-app.
+- Rental-discovery source and outbound-link disclosure (owner decision, 2026-10-22): **"Provided by NantucketRentals.com. Property links open there."** Use this exact string when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`. This approval is limited to source attribution and outbound property-detail navigation. It does not authorize or imply an inquiry, booking, lease, payment, availability, or customer-service handoff.
 - Legal footers on lease/payment surfaces carry the **trade name**, never the legal entity: `legal.cc.poweredby` in `shared-standards.md`, verbatim. The entity form these surfaces once carried was deleted on 2026-09-04, and counsel confirmed on 2026-09-11 that the trade name suffices on a lease or payment surface. Naming O2554 LLC in customer copy is a test failure, not a judgement call.
 
 ## The prohibition list
 
 Nantucket Houses **never**:
 
-1. Issues booking, lease, or payment records of its own. NH may originate and accept a first-time vacation booking (`docs/strategy/amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05), but NantucketRentals remains the authoritative booking, lease, payment, and inventory system, and the NH-to-NR handoff is stated only in the ratified affiliated-service handoff string. `[LEGAL REVIEW]` No such string is ratified as of 2026-09-05 — the six approved disclosures in `docs/legal/entity-and-listing-disclosures.md` do not cover it — so until one exists no NH-originated booking flow launches (amendment item 8), no NH surface ships handoff copy, and no one drafts a paraphrase in its place. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
+1. Issues booking, lease, or payment records of its own. NH may originate and accept a first-time vacation booking (`docs/strategy/amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05), but NantucketRentals remains the authoritative booking, lease, payment, and inventory system, and any inquiry, booking, lease, payment, or customer-service handoff is stated only in a separately ratified affiliated-service handoff string. `[LEGAL REVIEW]` No such transactional or service handoff string is ratified as of 2026-10-22 — the six approved disclosures in `docs/legal/entity-and-listing-disclosures.md` do not cover it — so until one exists no NH-originated booking flow launches and no one drafts a paraphrase in its place. The rental-discovery disclosure under **Cross-brand touchpoints** is ratified only for source attribution and outbound property-detail links; it is not a transactional or service handoff. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
 2. Uses brokerage vocabulary in product surfaces ("listing," "exclusive," "just listed," "buyer/seller representation")
 3. Puts marketing voice inside service flows (in-stay notifications, home guides, payment/lease messages)
 4. Sends market intelligence or valuation content (C&C's lane, from a named advisor)
