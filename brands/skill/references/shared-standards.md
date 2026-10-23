@@ -118,6 +118,9 @@ limitations once, plainly. Do not narrate the product, platform, or content whil
 delivering the information unless that explanation is necessary to the
 customer's task. Prefer clarity and firsthand specificity over polish.
 
+Do not explain what a clearly labeled control already communicates. Supporting
+copy must add a material fact, constraint, or consequence; otherwise remove it.
+
 This standard does not override an individual brand's role, voice, content
 boundaries, or functional requirements. Specificity must come from the facts
 appropriate to that brand.
