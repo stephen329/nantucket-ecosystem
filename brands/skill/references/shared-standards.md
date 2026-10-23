@@ -88,7 +88,7 @@ alone.
 
 - Every image in the shared library carries: source, license/rights (owned / licensed / UGC-permitted), permitted brands, credit requirement, expiry if licensed. `[AUDIT: inventory existing assets]`
 - UGC requires documented permission before use; credit as specified by the rights record.
-- Inventory photography (listing photos) is NR/C&C material and does not migrate to Hello (that would be listing-like content on the editorial brand).
+- **NantucketRentals.com-owned inventory photography is also Nantucket Houses-owned material** (owner decision, 2026-10-22). Nantucket Houses may use that photography on property-specific rental discovery and home-detail surfaces. The authoritative NantucketRentals.com inventory relationship supplies the per-image rights record: source `NantucketRentals.com property inventory`, rights `owned`, permitted brands `NantucketRentals.com; Nantucket Houses`, no credit requirement unless the source record says otherwise, and no expiry unless the source record says otherwise. A consuming surface may inherit this record instead of duplicating it, but it must preserve the property-to-image relationship and must never present one home's photograph as another home. This permission does not migrate inventory photography to Hello Nantucket; listing-like content remains outside the editorial brand.
 
 ## Asset and file conventions
 

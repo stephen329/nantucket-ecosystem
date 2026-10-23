@@ -61,6 +61,8 @@ The in-app AI assistant speaks in NH voice: helpful, bounded, honest about being
 
 `[AUDIT: extract current app palette, type, iconography into tokens under assets/nantucket-houses/]` — NH's design language must be separable at a glance from NR's conversion-oriented marketplace design. Where the app currently reuses NR visual patterns, register as a conflict, don't canonize it.
 
+Property-specific rental discovery and home-detail surfaces may use photographs from the authoritative NantucketRentals.com property inventory. Those photographs are shared owned material under `shared-standards.md` (owner decision, 2026-10-22); do not request a second rights decision merely because Nantucket Houses is the consuming brand. Preserve the source property's image mapping, accessible alternative text, and any exceptional credit or expiry carried by the source record. Photography does not import NantucketRentals.com's conversion styling, booking language, or marketplace urgency into Nantucket Houses.
+
 ## Cross-brand touchpoints
 
 - Listing attribution string (when a property's brokerage identity must appear): canonical string in `shared-standards.md`. That is the only place brokerage identity appears in-app.
