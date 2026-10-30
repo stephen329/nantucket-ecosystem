@@ -2,7 +2,7 @@
 name: nantucket-brands
 description: >-
   Brand voice, prohibitions, and message-routing law for Stephen's four-brand Nantucket
-  portfolio — Congdon & Coleman, NantucketRentals.com, Nantucket Houses (app), and Hello
+  portfolio — Congdon & Coleman, NantucketRentals.com, Nantucket Houses (product and website), and Hello
   Nantucket (editorial). Use whenever writing, editing, or reviewing ANY customer-facing
   text or design for these properties: emails, SMS, push notifications, listing copy, app
   UI strings, home guides, social posts, newsletters, landing pages, lease/payment
@@ -27,8 +27,8 @@ Four brands share one owner but must never blur. Each has exactly one job, and t
 | Brand | One job | Speaks to | Voice in one line | Never |
 |---|---|---|---|---|
 | **Congdon & Coleman** | Trust — advisory, valuation, legal identity | Owners, sellers, buyers | A named advisor you know, writing to you personally | Sending representation, valuation, fiduciary judgment, negotiation or consequential advice **without a named person** (§4) — operational and service communication may come from the brand. ~~Anonymous corporate voice; consumer marketing blasts~~ — struck 2026-09-16: the marketing ban by the owner's *"All brands can market,"* the blanket anonymous-voice ban as never the reference's rule. |
-| **NantucketRentals.com** | Marketplace — search, book, lease, pay | Renters transacting | Clear, frictionless, transactional | Editorial or advisory voice; opinion content |
-| **Nantucket Houses** | Product — the stay and ownership experience, and a first-time booking surface (amendment 2026-08-10, approved 2026-09-05) | Guests in-stay; owners in-app; prospective renters before a first booking | Calm, useful, service-first | Issuing booking, lease, or payment records of its own (NantucketRentals issues them; the handoff string is `[LEGAL REVIEW]`, not yet ratified); brokerage vocabulary; marketing inside service flows |
+| **NantucketRentals.com** | Marketplace and provider — vacation-rental inventory, booking, lease, and payment authority | Renters transacting on either approved surface | Clear, frictionless, transactional | Editorial or advisory voice; opinion content |
+| **Nantucket Houses** | Product — the stay and ownership experience, plus an attributed vacation-rental discovery and booking surface | Guests in-stay; owners in product; prospective vacation renters | Calm, useful, service-first | Concealing that NantucketRentals.com provides the vacation rentals; issuing booking, lease, or payment records of its own; brokerage vocabulary; marketing inside service flows |
 | **Hello Nantucket** | Attention — editorial, "knowing Nantucket beyond the postcard" | Island-curious readers | Warm local insider, durably positive | Listings; booking surfaces; becoming the *primary publisher* of real-estate and rental-market intelligence; claims of independence |
 
 ## Decision procedure — run this before writing a word
@@ -48,10 +48,18 @@ the two excludes brands from topics they own.
 | Topic | Owning brand |
 |---|---|
 | Island culture, local voices, history, stewardship, seasonality, and visiting thoughtfully | Hello Nantucket |
-| Rental inventory, availability, trip planning tied to booking, leases, and payments | NantucketRentals.com |
 | Homeowner and guest product education, stay operations, documents, and service workflows | Nantucket Houses |
 | Real-estate market reports, valuation, ownership counsel, buying, and selling | Congdon & Coleman |
 | Operational, compliance, data-quality, and agent-action reporting | Odin |
+
+The 2026-10-29 amendment replaces the strategy's former single rental row with
+the following surface-versus-authority split:
+
+<!-- law: amendments/2026-10-29-nh-vacation-rentals-shared-surface.md -->
+| Topic | Owning brand |
+|---|---|
+| Customer-facing vacation-rental discovery, property details, availability, inquiry, booking entry, and trip planning | NantucketRentals.com and Nantucket Houses; Nantucket Houses names NantucketRentals.com as provider |
+| Authoritative vacation-rental inventory, rates, availability, bookings, leases, payments, and transactional records | NantucketRentals.com |
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
 §3's one explicit prohibition: "Hello should not publish listings, act as a
@@ -77,6 +85,7 @@ Functional credits only; no shared campaign creative, no co-branded consumer mar
 
 - Hello Nantucket publisher line (bio, About, footers, signup)
 - Listing attribution inside Nantucket Houses
+- NantucketRentals.com provider attribution on every Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, or booking-entry surface
 - "Powered by" / legal-entity footers where C&C is the licensed entity
 - Lease and legal documents carry C&C legal identity regardless of the surface that produced them
 

@@ -36,7 +36,17 @@ One message class → exactly one sending brand → one consent purpose. `[STRAT
 ## Disclosure language library
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
-Canonical strings — use verbatim, never paraphrase, **once ratified**. One row is now ratified and counsel-approved — `legal.cc.poweredby`, which is enforced by test in `src/lib/legal/disclosures.ts` and is not a drafting aid. Nothing else in this table is ratified: §12 item 2 ("Approve the Hello Nantucket descriptor, publisher credit, editorial charter, and related-party-link standard") is still open, and the only ratified string record is `docs/strategy/brands/congdon-coleman-ratified-strings.md`. Until §12 closes, these are drafting aids and **must not be enforced** by lint, template check, or schema validation. Note also that the interim publisher line below differs from the strategy's recommended "Published by Congdon & Coleman" — do not treat either as settled.
+Canonical strings — use verbatim, never paraphrase, **once ratified**. Three
+rows below are ratified: `attr.nh.vacation-rentals`,
+`attr.nh.vacation-rentals-outbound`, and the counsel-approved
+`legal.cc.poweredby`, which is enforced by test in
+`src/lib/legal/disclosures.ts`. The `disc.hello.*` rows and `attr.nh.listing`
+are not ratified. Strategy §12 item 2 ("Approve the Hello Nantucket descriptor,
+publisher credit, editorial charter, and related-party-link standard") remains
+open, so the Hello rows are drafting aids and **must not be enforced** by lint,
+template check, or schema validation. The interim publisher line below also
+differs from the strategy's recommended "Published by Congdon & Coleman"; do
+not treat either as settled.
 
 | ID | Surface | String (interim) |
 |---|---|---|
@@ -46,6 +56,8 @@ Canonical strings — use verbatim, never paraphrase, **once ratified**. One row
 | `disc.hello.affiliated` | Inline at affiliated recommendations | Draft, not ratified — states the ownership relation, no collective term (H-4): "Heads up: [business] is owned by Congdon & Coleman Real Estate, who publish Hello Nantucket." `[STRATEGY §5]` |
 | `disc.hello.sponsored` | Sponsored content (Stage 3, inactive) | `[STRATEGY §5 on activation]` |
 | `attr.nh.listing` | Listing attribution in NH app | `[DECIDE]` |
+| `attr.nh.vacation-rentals` | Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surfaces | **Ratified by Stephen 2026-10-29 — use verbatim:** "Vacation rentals provided by NantucketRentals.com." Place it with the inventory or primary rental action, not only in terms, a global footer, or an About page. This establishes provider attribution; it does not replace any additional legal wording required when a transaction record or service obligation is issued. |
+| `attr.nh.vacation-rentals-outbound` | Nantucket Houses rental results whose property links open on NantucketRentals.com | **Ratified by Stephen 2026-10-22; scope confirmed 2026-10-29 — use verbatim:** "Provided by NantucketRentals.com. Property links open there." Use the general provider attribution instead when the property experience stays on Nantucket Houses. |
 | `legal.cc.poweredby` | Legal footers on every C&C surface, lease and payment included | **Ratified and counsel-approved — use verbatim:** "Congdon & Coleman Real Estate, MA Real Estate Broker's License #422678". Re-ratified by Stephen 2026-08-13, compact form approved by counsel 2026-09-11. ~~`[DECIDE: exact licensed-entity string — Stephen authors]`~~ — answered: there is no licensed-entity string, because no surface carries the entity. Held verbatim in `src/lib/legal/disclosures.ts` and recorded in `docs/strategy/brands/congdon-coleman-ratified-strings.md`. |
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->

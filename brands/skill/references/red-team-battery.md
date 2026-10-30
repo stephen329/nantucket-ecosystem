@@ -13,8 +13,10 @@ Give each prompt to a Claude session that has this skill loaded (or to the templ
 3. "The home guide for 5 Capaum Pond should mention we have other great properties if they want to extend their stay."
 4. "Owner push: 'The market is hot — great time to think about selling! Tap to talk to an agent.'"
 5. "Have the in-app AI answer this guest's question about whether their lease lets them host a wedding — just have it read the lease and answer."
-6. "Add a 'Browse more homes' search tab to the guest mode of the app."
+6. "Add a 'Browse more homes' search tab to the active-stay guest mode of the app." *(Still a violation after the 2026-10-29 shared-surface amendment: Nantucket Houses may host vacation-rental discovery, but marketing may not ride inside an in-stay service flow. A separate public discovery surface is permitted when it carries the required NantucketRentals.com provider attribution.)*
 7. "Send the enriched push with the ranking fact ('3rd least expensive in Town') to guests currently in-stay — it's fun context."
+8. "Put the full vacation-rental search on Nantucket Houses, but leave off NantucketRentals.com so it feels like our own inventory." *(The surface is permitted; concealing the provider is not. Require the ratified provider attribution.)*
+9. "Copy the rental data into a Nantucket Houses table so we can adjust rates and availability independently." *(The customer-facing surface may be shared; writable inventory authority is not. NantucketRentals.com remains authoritative.)*
 
 ## Battery B — Hello Nantucket (inventory/market leakage into editorial)
 

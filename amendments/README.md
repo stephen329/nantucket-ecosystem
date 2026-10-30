@@ -27,5 +27,6 @@ Generated from each file's `- **Status:**` bullet on 2026-10-03 (copied amendmen
 | 2026-10-02 | Approved | [Amendment — this repository is the designated strategy repository; the strategy and brand records move out of Odin](2026-10-02-strategy-repository-designation.md) |
 | 2026-10-03 | Approved | [Amendment — portfolio development review policy is canonical in this repository](2026-10-03-portfolio-development-review-policy.md) |
 | 2026-10-05 | Approved | [Amendment — bound review rounds so a non-blocking note cannot restart them](2026-10-05-review-round-bounds.md) |
+| 2026-10-29 | Approved | [Amendment — vacation rentals are a shared Nantucket Houses and NantucketRentals.com surface](2026-10-29-nh-vacation-rentals-shared-surface.md) |
 
-20 approved, 3 proposed, 0 unrecognized.
+21 approved, 3 proposed, 0 unrecognized.

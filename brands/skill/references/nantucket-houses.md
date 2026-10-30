@@ -2,7 +2,7 @@
 
 *Subordinate to the Nantucket Ecosystem Strategy, Section 3. Conflicts resolve to the plan.*
 
-Nantucket Houses is the product brand: the iOS app and its surfaces, serving guests during their stay, owners managing their property, and — since the amendment of 2026-08-10, approved 2026-09-05 — prospective renters making a first booking. Its one job is the experience — calm, useful, service-first. It is where the portfolio's trust is either earned nightly or lost in a single tone-deaf push notification.
+Nantucket Houses is the product brand across its applications and `nantuckethouses.com`: it serves guests during their stay, owners managing their property, and prospective vacation renters discovering and booking a home. Vacation rentals may live on Nantucket Houses as fully as they do on NantucketRentals.com at the customer-facing surface, provided Nantucket Houses clearly names NantucketRentals.com as the provider. NantucketRentals.com remains authoritative for the inventory and transaction records. Nantucket Houses' one job is the experience — calm, useful, service-first. It is where trust is either earned through a useful interaction or lost through a single tone-deaf one.
 
 ## Voice
 
@@ -73,17 +73,40 @@ Property-specific rental discovery and home-detail surfaces may use photographs 
 ## Cross-brand touchpoints
 
 - Listing attribution string (when a property's brokerage identity must appear): canonical string in `shared-standards.md`. That is the only place brokerage identity appears in-app.
-- Rental-discovery source and outbound-link disclosure (owner decision, 2026-10-22): **"Provided by NantucketRentals.com. Property links open there."** Use this exact string when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`. This approval is limited to source attribution and outbound property-detail navigation. It does not authorize or imply an inquiry, booking, lease, payment, availability, or customer-service handoff.
+- Vacation-rental provider disclosure (owner decision, 2026-10-29): **"Vacation rentals provided by NantucketRentals.com."** Use this exact string on Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surfaces. Place it with the inventory or primary rental action, not only in terms, a global footer, or an About page.
+- Rental-discovery source and outbound-link disclosure (owner decisions, 2026-10-22 and 2026-10-29): **"Provided by NantucketRentals.com. Property links open there."** Use this exact string when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`. Use the general provider disclosure instead when the detail experience remains on Nantucket Houses.
 - Legal footers on lease/payment surfaces carry the **trade name**, never the legal entity: `legal.cc.poweredby` in `shared-standards.md`, verbatim. The entity form these surfaces once carried was deleted on 2026-09-04, and counsel confirmed on 2026-09-11 that the trade name suffices on a lease or payment surface. Naming O2554 LLC in customer copy is a test failure, not a judgement call.
+
+## Vacation-rental surfaces
+
+Nantucket Houses may host vacation-rental search, results, property facts,
+photography, rates, availability, comparison, inquiry, booking entry, saves,
+shortlists, and trip planning. The customer may remain on Nantucket Houses
+through these experiences. An outbound property link is an option, not a brand
+requirement.
+
+The surface and the record authority are separate. Nantucket Houses reads and
+presents the authoritative NantucketRentals.com inventory and may submit into
+its approved interfaces. It does not create a second writable inventory or
+issue a separate booking, lease, or payment record. Transactional communication
+continues to come from NantucketRentals.com.
+
+Use factual rental vocabulary needed to complete the job: dates, rates,
+availability, bedrooms, capacity, amenities, and booking actions. Keep the
+Nantucket Houses voice calm and useful. Do not import urgency, scarcity
+pressure, or conversion styling from NantucketRentals.com, and do not place
+vacation-rental promotion inside a stay, home-guide, payment, or owner-service
+flow.
 
 ## The prohibition list
 
 Nantucket Houses **never**:
 
-1. Issues booking, lease, or payment records of its own. NH may originate and accept a first-time vacation booking (`docs/strategy/amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05), but NantucketRentals remains the authoritative booking, lease, payment, and inventory system, and any inquiry, booking, lease, payment, or customer-service handoff is stated only in a separately ratified affiliated-service handoff string. `[LEGAL REVIEW]` No such transactional or service handoff string is ratified as of 2026-10-22 — the six approved disclosures in `docs/legal/entity-and-listing-disclosures.md` do not cover it — so until one exists no NH-originated booking flow launches and no one drafts a paraphrase in its place. The rental-discovery disclosure under **Cross-brand touchpoints** is ratified only for source attribution and outbound property-detail links; it is not a transactional or service handoff. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
+1. Issues booking, lease, or payment records of its own. Nantucket Houses may originate and accept a first-time vacation booking (`amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05) and may host the complete customer-facing vacation-rental experience (`amendments/2026-10-29-nh-vacation-rentals-shared-surface.md`, approved 2026-10-29), but NantucketRentals.com remains the authoritative booking, lease, payment, and inventory system. The provider attribution above is ratified for discovery, detail, availability, inquiry, and booking-entry surfaces. Any additional wording required when a lease, payment, booking record, or customer-service obligation is issued remains subject to the existing `[LEGAL REVIEW]` transactional-handoff gate; no one drafts a paraphrase in its place. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
 2. Uses brokerage vocabulary in product surfaces ("listing," "exclusive," "just listed," "buyer/seller representation")
 3. Puts marketing voice inside service flows (in-stay notifications, home guides, payment/lease messages)
 4. Sends market intelligence or valuation content (C&C's lane, from a named advisor)
 5. Lets AI chat make advisory, legal, or financial statements instead of escalating
+6. Presents vacation-rental inventory without naming NantucketRentals.com as the provider
 
 A request to violate these is refused and flagged, citing this file.
