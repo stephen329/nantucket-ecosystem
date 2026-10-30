@@ -1,15 +1,24 @@
 # Amendment — Nantucket Houses is the market research and real-estate data product
 
+- **Date raised:** 2026-10-29
 - **Status:** **Approved and ratified — Stephen Maury, 2026-10-29.** Stephen directed in the Codex task that Nantucket Houses is a true market research and data tool, including active listings and data reports. The decision becomes operative when this amendment is merged to `main`.
-- **Owner:** Stephen Maury
-- **Affects:** Strategy §3 brand table and content ownership; Nantucket Houses and Congdon & Coleman brand references; the sending-brand matrix; listing attribution; red-team tests
+- **Owner:** Stephen Maury (executive sponsor)
+- **Affects:** Strategy §3 brand table and content ownership; Strategy §4 handoffs; Nantucket Houses and Congdon & Coleman brand references; the sending-brand matrix; listing attribution; red-team tests
 
-## Decision
+## Reason
+
+The strategy and derived brand rules described Nantucket Houses primarily as a
+stay and owner-service product and assigned real-estate market reports wholly
+to Congdon & Coleman. That framing omitted Stephen's intended role for
+Nantucket Houses as the customer-facing product for real-estate research,
+active for-sale listings, and factual data reporting.
+
+## Change
 
 Nantucket Houses is the portfolio's customer-facing market research and
 real-estate data product. Its public website and applications may provide:
 
-- active real-estate listings and listing search;
+- active for-sale real-estate listings and listing search;
 - factual property and parcel information;
 - current and historical market data;
 - filters, maps, comparisons, charts, trends, and other research tools; and
@@ -25,7 +34,7 @@ real-estate market reports with a fact-versus-judgment split:
 
 | Topic | Owning brand |
 |---|---|
-| Active listings, property facts, market datasets, research tools, and factual data reports | Nantucket Houses |
+| Active for-sale listings, property facts, market datasets, research tools, and factual data reports | Nantucket Houses |
 | Representation, valuation, fiduciary judgment, negotiation, recommendations, and advice about what market facts mean for a person's property or decision | Congdon & Coleman, from a named advisor where §4 requires one |
 
 A Nantucket Houses data report may describe what the sourced data shows. It
@@ -46,10 +55,24 @@ Nantucket Houses may use ordinary factual real-estate vocabulary, including
 Display of a listing does not imply that Congdon & Coleman represents the
 seller, buyer, or property.
 
+This market-research authority does not include long-term-rental inventory or
+long-term-rental listings. The strategy's original rental ownership row remains
+controlling outside vacation rentals. Vacation-rental presentation is governed
+only by `2026-10-29-nh-vacation-rentals-shared-surface.md`; a separate approved
+decision is required before long-term rentals may appear on Nantucket Houses.
+
 Required source, listing-brokerage, and other regulated attribution must appear
 where the listing data or applicable rules require it. The exact canonical
 `attr.nh.listing` wording and placement remain `[DECIDE]`; this amendment does
 not invent or ratify that string and does not waive any required attribution.
+
+## Listing actions and advisor handoff
+
+The existing Strategy §4 handoff remains unchanged. Buying, selling, valuation,
+and showing requests that begin on a Nantucket Houses listing or research
+surface route to a named Congdon & Coleman advisor under the approved consent
+and escalation rules. They do not terminate in a generic Nantucket Houses inbox
+or an automated advisory workflow.
 
 ## Product voice and marketing boundary
 
@@ -78,13 +101,37 @@ brand, suppression behavior, and frequency rule before launch.
   implementation details remain subject to their existing gates or `[DECIDE]`
   markers.
 
+## Affected metrics, gates, and parameters
+
+- No existing launch gate, consent rule, frequency cap, authoritative system,
+  or legal parameter is cleared or weakened.
+- Public, user-initiated research is a product interaction, not a send. The new
+  Nantucket Houses research-alert and distributed-data-report matrix row is
+  marketing, remains fail-closed at `[DECIDE: class and cap]`, and cannot launch
+  until its class, suppression behavior, and cap are approved.
+- `attr.nh.listing` remains `[DECIDE]`; this amendment ratifies no exact listing
+  attribution string or placement.
+- Strategy §4 continues to route buying, selling, valuation, and showing
+  requests to a named Congdon & Coleman advisor.
+- The vacation-rental booking launch hold, provider attribution, record
+  authority, and long-term-rental exclusion remain unchanged.
+
+## Copies that must change with it
+
+- `amendments/README.md`
+- `brands/skill/SKILL.md`
+- `brands/skill/references/nantucket-houses.md`
+- `brands/skill/references/congdon-coleman.md`
+- `brands/skill/references/shared-standards.md`
+- `brands/skill/references/red-team-battery.md`
+
 ## Acceptance criteria
 
 The decision is implemented correctly only when:
 
 1. Nantucket Houses is described as the market research and real-estate data
    product, not only as a stay, owner-service, or vacation-rental surface.
-2. Active listings and factual data reports are explicitly permitted on
+2. Active for-sale listings and factual data reports are explicitly permitted on
    Nantucket Houses.
 3. Factual reporting is separated from valuation, representation, and
    individualized advice.
@@ -92,3 +139,11 @@ The decision is implemented correctly only when:
    exact requirements are ratified or supplied by the governing data rules.
 5. Research surfaces do not become an excuse to put marketing inside service
    flows or to send unconsented market content.
+6. Long-term-rental inventory remains outside this authority, and buying,
+   selling, valuation, and showing requests preserve the named-advisor handoff.
+
+## Approval
+
+Approved and ratified by Stephen Maury through explicit Codex task direction on
+2026-10-29. The approval becomes operative when the implementing pull request is
+merged to `main`; record that PR here when opened.

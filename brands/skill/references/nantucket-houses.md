@@ -2,7 +2,7 @@
 
 *Subordinate to the Nantucket Ecosystem Strategy, Section 3. Conflicts resolve to the plan.*
 
-Nantucket Houses is the market research and real-estate data product across its applications and `nantuckethouses.com`. Active listings, property facts, market datasets, research tools, and factual data reports are core Nantucket Houses experiences. It also serves guests during their stay, owners managing their property, and prospective vacation renters discovering and booking a home. Vacation rentals may live on Nantucket Houses as fully as they do on NantucketRentals.com at the customer-facing surface, provided Nantucket Houses clearly names NantucketRentals.com as the provider. NantucketRentals.com remains authoritative for vacation-rental inventory and transaction records. Nantucket Houses is calm, useful, factual, and service-first. It is where trust is either earned through a useful interaction or lost through a single tone-deaf one.
+Nantucket Houses is the market research and real-estate data product across its applications and `nantuckethouses.com`. Active for-sale listings, property facts, market datasets, research tools, and factual data reports are core Nantucket Houses experiences. It also serves guests during their stay, owners managing their property, and prospective vacation renters discovering and booking a home. Vacation rentals may live on Nantucket Houses as fully as they do on NantucketRentals.com at the customer-facing surface, provided Nantucket Houses clearly names NantucketRentals.com as the provider. NantucketRentals.com remains authoritative for vacation-rental inventory and transaction records. Nantucket Houses is calm, useful, factual, and service-first. It is where trust is either earned through a useful interaction or lost through a single tone-deaf one.
 
 ## Voice
 
@@ -108,7 +108,7 @@ flow.
 
 ## Market research, listings, and data reports
 
-Nantucket Houses may host active real-estate listings, listing search, property
+Nantucket Houses may host active for-sale real-estate listings, listing search, property
 and parcel facts, current and historical market data, maps, filters,
 comparisons, charts, trends, and source-dated factual data reports. These are
 core product surfaces under
@@ -129,6 +129,14 @@ Ordinary factual terms such as `active listing`, `sale`, `asking price`, `days
 on market`, and listing status are permitted. Displaying a listing does not
 claim that Congdon & Coleman represents the seller, buyer, or property.
 
+This authority does not include long-term-rental inventory or listings. The
+original rental ownership rule remains controlling outside vacation rentals,
+and vacation rentals use the separate shared-surface amendment. Buying,
+selling, valuation, and showing requests from a Nantucket Houses listing or
+research surface route to a named Congdon & Coleman advisor under the approved
+consent and escalation rules; they do not end in a generic Nantucket Houses
+inbox or automated advisory workflow.
+
 ## The prohibition list
 
 Nantucket Houses **never**:
@@ -140,5 +148,6 @@ Nantucket Houses **never**:
 5. Lets AI chat make advisory, legal, or financial statements instead of escalating
 6. Presents vacation-rental inventory without naming NantucketRentals.com as the provider
 7. Extends the shared-surface permission to long-term rentals without a separate approved decision
+8. Treats the for-sale research authority as permission to publish long-term-rental inventory or bypasses the named-advisor handoff for buying, selling, valuation, or showing requests
 
 A request to violate these is refused and flagged, citing this file.

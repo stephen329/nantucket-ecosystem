@@ -39,13 +39,20 @@ Ratified system (source: NR Branding Guide; tokens in `assets/nantucketrentals/t
 Nantucket Houses may present vacation-rental search, property details,
 photography, rates, availability, inquiry, booking entry, saves, shortlists, and
 trip planning from the authoritative NantucketRentals.com inventory. On those
-surfaces it uses the canonical provider attribution in `shared-standards.md`.
+surfaces it carries the required provider attribution described in
+`shared-standards.md`; the meaning is ratified, while exact wording remains
+`[DECIDE]`.
 
 Nantucket Houses may shape the surrounding experience in its own calm,
 service-first voice, but it may not alter source facts, availability, rates, or
 booking terms. NantucketRentals.com remains authoritative for the inventory and
 transaction records and remains the sending brand for booking, lease, and
 payment lifecycle communication.
+
+Customer-facing booking entry does not clear the launch hold. No Nantucket
+Houses-originated booking or transaction flow launches until
+`legal.nh.handoff @ <placement>` is counsel-approved and validly recorded and
+`nhBookingSurfaceCleared()` passes.
 
 ## Transactional email and SMS
 

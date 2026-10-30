@@ -28,7 +28,7 @@ Four brands share one owner but must never blur. Each has exactly one job, and t
 |---|---|---|---|---|
 | **Congdon & Coleman** | Trust — advisory, valuation, legal identity | Owners, sellers, buyers | A named advisor you know, writing to you personally | Sending representation, valuation, fiduciary judgment, negotiation or consequential advice **without a named person** (§4) — operational and service communication may come from the brand. ~~Anonymous corporate voice; consumer marketing blasts~~ — struck 2026-09-16: the marketing ban by the owner's *"All brands can market,"* the blanket anonymous-voice ban as never the reference's rule. |
 | **NantucketRentals.com** | Marketplace and provider — vacation-rental inventory, booking, lease, and payment authority | Renters transacting on either approved surface | Clear, frictionless, transactional | Editorial or advisory voice; opinion content |
-| **Nantucket Houses** | Market research and real-estate data product, including active listings and data reports; also the stay, ownership, and attributed vacation-rental experience | Market researchers, buyers, sellers, homeowners, guests, and prospective vacation renters | Calm, useful, factual, service-first | Unsourced or misleading data; presenting automated output as valuation or advice; concealing that NantucketRentals.com provides vacation rentals; marketing inside service flows |
+| **Nantucket Houses** | Market research and real-estate data product, including active for-sale listings and data reports; also the stay, ownership, and attributed vacation-rental experience | Market researchers, buyers, sellers, homeowners, guests, and prospective vacation renters | Calm, useful, factual, service-first | Unsourced or misleading data; presenting automated output as valuation or advice; concealing that NantucketRentals.com provides vacation rentals; issuing booking, lease, or payment records; launching an NH booking flow before `legal.nh.handoff @ <placement>` is recorded and `nhBookingSurfaceCleared()` passes; marketing inside service flows |
 | **Hello Nantucket** | Attention — editorial, "knowing Nantucket beyond the postcard" | Island-curious readers | Warm local insider, durably positive | Listings; booking surfaces; becoming the *primary publisher* of real-estate and rental-market intelligence; claims of independence |
 
 ## Decision procedure — run this before writing a word
@@ -69,8 +69,13 @@ assignment for real-estate market reports with this fact-versus-judgment split:
 <!-- law: amendments/2026-10-29-nh-market-research-and-data-product.md -->
 | Topic | Owning brand |
 |---|---|
-| Active listings, property facts, market datasets, research tools, and factual data reports | Nantucket Houses |
+| Active for-sale listings, property facts, market datasets, research tools, and factual data reports | Nantucket Houses |
 | Representation, valuation, fiduciary judgment, negotiation, recommendations, and advice about what market facts mean for a person's property or decision | Congdon & Coleman, from a named advisor where §4 requires one |
+
+This research authority does not include long-term-rental inventory or listings.
+Buying, selling, valuation, and showing requests from a Nantucket Houses surface
+route to a named Congdon & Coleman advisor under the approved consent and
+escalation rules.
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
 §3's one explicit prohibition: "Hello should not publish listings, act as a
