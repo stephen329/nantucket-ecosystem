@@ -1,5 +1,13 @@
 # Amendment — Nantucket Houses as a booking and acquisition surface
 
+> **Later decision, 2026-10-29:**
+> `2026-10-29-nh-vacation-rentals-shared-surface.md` confirms that vacation-
+> rental discovery, property detail, availability, inquiry, and booking-entry
+> experiences may live on both Nantucket Houses and NantucketRentals.com.
+> Nantucket Houses must name NantucketRentals.com as the provider. The record-
+> authority rules and transactional-handoff legal gate in this amendment remain
+> unchanged.
+
 - **Date raised:** 2026-08-10
 - **Product decision:** Made 2026-08-10 by the owner. Nantucket Houses is a
   first-time acquisition and booking surface, not a post-booking companion and

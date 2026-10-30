@@ -2,7 +2,7 @@
 
 *Subordinate to the Nantucket Ecosystem Strategy, Section 3. Conflicts resolve to the plan.*
 
-NantucketRentals.com is the marketplace: search, listing, booking, lease, and payment. Its one job is conversion with clarity — a renter moves from looking to booked with no friction and no confusion about what they're agreeing to. Its governing KPI is transactional; its voice is transactional; anything editorial or advisory on this brand is leakage.
+NantucketRentals.com is the authoritative vacation-rental marketplace and provider: inventory, rates, availability, booking, lease, and payment. Its own customer-facing marketplace moves a renter from looking to booked with no friction and no confusion about what they are agreeing to. The same authoritative vacation-rental inventory may also appear in a Nantucket Houses customer experience when Nantucket Houses names NantucketRentals.com as the provider. That shared surface does not change which system holds or issues the records. NantucketRentals.com's governing KPI is transactional; its voice is transactional; anything editorial or advisory on this brand is leakage.
 
 ## Voice
 
@@ -33,6 +33,26 @@ Ratified system (source: NR Branding Guide; tokens in `assets/nantucketrentals/t
 - Listing copy is factual inventory description: capacity, layout, amenities, location facts, booking terms. Adjectives earn their place by being verifiable ("waterfront" yes; "breathtaking" no).
 - Photography: `[AUDIT/DECIDE: shot list and standards — exteriors, every bedroom, baths, kitchen, outdoor space; seasonal accuracy; no misleading angles]`. Photo order: hero exterior → living → kitchen → bedrooms → baths → outdoor.
 - Accuracy is a legal posture, not just a style choice: listing claims feed lease expectations. Anything a tenant could reasonably rely on must be true, current, and reflected in the listing record in nrbe. `[AUDIT: reconcile with listing-accuracy review process]`
+
+## Nantucket Houses distribution
+
+Nantucket Houses may present vacation-rental search, property details,
+photography, rates, availability, inquiry, booking entry, saves, shortlists, and
+trip planning from the authoritative NantucketRentals.com inventory. On those
+surfaces it carries the required provider attribution described in
+`shared-standards.md`; the meaning is ratified, while exact wording remains
+`[DECIDE]`.
+
+Nantucket Houses may shape the surrounding experience in its own calm,
+service-first voice, but it may not alter source facts, availability, rates, or
+booking terms. NantucketRentals.com remains authoritative for the inventory and
+transaction records and remains the sending brand for booking, lease, and
+payment lifecycle communication.
+
+Customer-facing booking entry does not clear the launch hold. No Nantucket
+Houses-originated booking or transaction flow launches until
+`legal.nh.handoff @ <placement>` is counsel-approved and validly recorded and
+`nhBookingSurfaceCleared()` passes.
 
 ## Transactional email and SMS
 
