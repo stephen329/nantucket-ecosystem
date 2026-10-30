@@ -86,6 +86,41 @@ do not by themselves authorize a marketing send. A subscription, alert, saved
 search, or distributed report still needs the correct consent class, sending
 brand, suppression behavior, and frequency rule before launch.
 
+## Audience, main action, and governing KPI
+
+This amendment qualifies the Nantucket Houses row in Strategy §3 rather than
+putting research users into the eligible-user activation denominator:
+
+- **Priority audience:** eligible C&C/NR homeowners, booked guests, prospective
+  vacation renters who reach Nantucket Houses before booking, public market
+  researchers, and prospective buyers and sellers.
+- **Research job and main action:** understand a Nantucket property or market
+  condition by completing a meaningful research task on a listing, property,
+  comparison, or data report. The existing owner, guest, and stay jobs remain
+  unchanged.
+- **Governing research KPI:** research-task completion plus attributable
+  high-intent handoff rate for buying, selling, valuation, or showing requests.
+  This KPI is reported as its own research-product cut. The exact qualifying
+  event catalog and target values remain `[DECIDE]`; they must be fixed before
+  the KPI is used as a launch or investment gate.
+
+The cohort rules ratified in
+`2026-08-10-nh-in-app-booking-and-paid-installs.md` continue to determine
+acquisition origin. A person who first reaches Nantucket Houses through a
+for-sale listing, property-value tool, market report, or other research surface
+without an existing relationship is an **NH-acquired prospect**. A person with
+an existing owner, guest, buyer, seller, or prior-user relationship retains that
+original population. Research activity is an orthogonal product-behavior cut,
+not a fourth acquisition population.
+
+The existing eligible-user activation plus core-task-completion KPI stays
+defined only on the owner and lease-invited populations. Public researchers and
+prospective buyers or sellers never enter that KPI's denominator merely because
+they use a research surface. Conversely, research engagement is not credited to
+the eligible-user KPI merely because the researcher later becomes an owner or
+guest. Origin, research behavior, qualified intent, and any later transaction
+remain separately attributable.
+
 ## Relationship to other decisions
 
 - The vacation-rental shared-surface amendment remains controlling for
@@ -110,6 +145,11 @@ brand, suppression behavior, and frequency rule before launch.
 
 - No existing launch gate, consent rule, frequency cap, authoritative system,
   or legal parameter is cleared or weakened.
+- The existing eligible-user activation denominator remains limited to owner and
+  lease-invited populations. Research-product performance is reported separately
+  as research-task completion and attributable high-intent handoff rate; its
+  qualifying events and targets remain `[DECIDE]` and cannot be selected after
+  results are visible.
 - Public, user-initiated research is a product interaction, not a send. The new
   Nantucket Houses research-alert and distributed-data-report matrix row is
   marketing, remains fail-closed at `[DECIDE: class and cap]`, and cannot launch
@@ -127,6 +167,7 @@ brand, suppression behavior, and frequency rule before launch.
 - `brands/skill/SKILL.md`
 - `brands/skill/references/nantucket-houses.md`
 - `brands/skill/references/congdon-coleman.md`
+- `brands/skill/references/hello-nantucket.md`
 - `brands/skill/references/shared-standards.md`
 - `brands/skill/references/red-team-battery.md`
 - `brands/cc-decision-register-addendum-2026-08-13.md` (A-3 remains
@@ -151,6 +192,10 @@ The decision is implemented correctly only when:
 7. Owner-facing off-market administration continues to use ownership
    vocabulary rather than brokerage vocabulary under decision-register item
    A-3.
+8. Public researchers and prospective buyers or sellers are not added to the
+   eligible-user activation denominator; research-task completion and
+   attributable high-intent handoffs are reported as a separate product cut,
+   with event definitions and targets held until approved.
 
 ## Approval
 
