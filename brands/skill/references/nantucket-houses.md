@@ -17,7 +17,7 @@ Calm, competent, brief. The app speaks like an excellent house manager: anticipa
 
   **None of this is sendable today**, and the narrowing changes no send: the classes are proposed and unratified, none has a frequency-cap cell (the message-class dimension is fail-closed), and `nhAdvertisingCleared()` still blocks both showcase members on four unrecorded prerequisites. Recorded in `../../../amendments/2026-09-16-per-brand-marketing-classes.md`.
 - **Research mode:** factual and transparent. Show the source, applicable period, methodology, and material limitations. Help people understand listings, properties, and market conditions without turning data into representation, valuation, or personalized advice.
-- **Owner mode:** professional and factual. Owners are managing an asset; give them signal (bookings, payments, property status, and sourced market data) without upsell or unsigned brokerage advice.
+- **Owner mode:** professional and factual. Owners are managing an asset; give them signal (bookings, payments, property status, and sourced market data) without upsell or unsigned brokerage advice. Owner-facing off-market administration remains an ownership workflow under decision-register item A-3 and uses ownership vocabulary, not brokerage vocabulary.
 
 The natural-writing standard in `shared-standards.md` applies. Here, specificity
 means useful stay, home, booking, payment, property-status, listing, and market
@@ -121,6 +121,10 @@ or decision. A named advisor is required wherever §4 requires one.
 Ordinary factual terms such as `active listing`, `sale`, `asking price`, `days
 on market`, and listing status are permitted. Displaying a listing does not
 claim that Congdon & Coleman represents the seller, buyer, or property.
+This permission applies to public research and customer-facing for-sale listing
+surfaces. It does not apply to owner-facing off-market administration, which
+uses ownership vocabulary rather than brokerage vocabulary under
+`brands/cc-decision-register-addendum-2026-08-13.md` item A-3.
 
 This authority does not include long-term-rental inventory or listings. The
 original rental ownership rule remains controlling outside vacation rentals,

@@ -96,6 +96,11 @@ brand, suppression behavior, and frequency rule before launch.
   and licensed-identity brand.
 - Hello Nantucket remains the editorial brand and may not become the primary
   publisher of real-estate or rental-market intelligence.
+- Decision-register item A-3 remains controlling for owner-facing off-market
+  administration in Nantucket Houses: that flow uses ownership vocabulary, not
+  brokerage vocabulary. The factual listing terms permitted by this amendment
+  apply to public research and customer-facing for-sale listing surfaces, not
+  the off-market owner-admin workflow.
 - This amendment does not decide a source, refresh cadence, methodology,
   report taxonomy, listing-attribution string, or regulated disclaimer. Those
   implementation details remain subject to their existing gates or `[DECIDE]`
@@ -124,6 +129,8 @@ brand, suppression behavior, and frequency rule before launch.
 - `brands/skill/references/congdon-coleman.md`
 - `brands/skill/references/shared-standards.md`
 - `brands/skill/references/red-team-battery.md`
+- `brands/cc-decision-register-addendum-2026-08-13.md` (A-3 remains
+  unchanged and controlling)
 
 ## Acceptance criteria
 
@@ -141,6 +148,9 @@ The decision is implemented correctly only when:
    flows or to send unconsented market content.
 6. Long-term-rental inventory remains outside this authority, and buying,
    selling, valuation, and showing requests preserve the named-advisor handoff.
+7. Owner-facing off-market administration continues to use ownership
+   vocabulary rather than brokerage vocabulary under decision-register item
+   A-3.
 
 ## Approval
 
