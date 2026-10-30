@@ -68,13 +68,19 @@ The in-app AI assistant speaks in NH voice: helpful, bounded, honest about being
 
 `[AUDIT: extract current app palette, type, iconography into tokens under assets/nantucket-houses/]` — NH's design language must be separable at a glance from NR's conversion-oriented marketplace design. Where the app currently reuses NR visual patterns, register as a conflict, don't canonize it.
 
-Property-specific rental discovery and home-detail surfaces may use photographs from the authoritative NantucketRentals.com property inventory. Those photographs are shared owned material under `shared-standards.md` (owner decision, 2026-10-22); do not request a second rights decision merely because Nantucket Houses is the consuming brand. Preserve the source property's image mapping, accessible alternative text, and any exceptional credit or expiry carried by the source record. Photography does not import NantucketRentals.com's conversion styling, booking language, or marketplace urgency into Nantucket Houses.
+Property-specific rental discovery and home-detail surfaces may use photographs
+whose rights records permit use by Nantucket Houses. Preserve the source
+property's image mapping, accessible alternative text, and any exceptional
+credit or expiry carried by the source record. Shared surface permission does
+not transfer or relabel photography rights and does not import
+NantucketRentals.com's conversion styling, booking language, or marketplace
+urgency into Nantucket Houses.
 
 ## Cross-brand touchpoints
 
 - Listing attribution string (when a property's brokerage identity must appear): canonical string in `shared-standards.md`. That is the only place brokerage identity appears in-app.
-- Vacation-rental provider disclosure (owner decision, 2026-10-29): **"Vacation rentals provided by NantucketRentals.com."** Use this exact string on Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surfaces. Place it with the inventory or primary rental action, not only in terms, a global footer, or an About page.
-- Rental-discovery source and outbound-link disclosure (owner decisions, 2026-10-22 and 2026-10-29): **"Provided by NantucketRentals.com. Property links open there."** Use this exact string when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`. Use the general provider disclosure instead when the detail experience remains on Nantucket Houses.
+- Vacation-rental provider disclosure (owner decision, 2026-10-29): every Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surface clearly identifies NantucketRentals.com as the provider. Place that meaning with the inventory or primary rental action, not only in terms, a global footer, or an About page. Exact wording is not yet ratified.
+- Rental-discovery outbound-link disclosure (owner decision, 2026-10-29): when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`, identify NantucketRentals.com as provider and make the outbound destination clear before the customer follows the link. Exact wording is not yet ratified.
 - Legal footers on lease/payment surfaces carry the **trade name**, never the legal entity: `legal.cc.poweredby` in `shared-standards.md`, verbatim. The entity form these surfaces once carried was deleted on 2026-09-04, and counsel confirmed on 2026-09-11 that the trade name suffices on a lease or payment surface. Naming O2554 LLC in customer copy is a test failure, not a judgement call.
 
 ## Vacation-rental surfaces
@@ -102,11 +108,12 @@ flow.
 
 Nantucket Houses **never**:
 
-1. Issues booking, lease, or payment records of its own. Nantucket Houses may originate and accept a first-time vacation booking (`amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05) and may host the complete customer-facing vacation-rental experience (`amendments/2026-10-29-nh-vacation-rentals-shared-surface.md`, approved 2026-10-29), but NantucketRentals.com remains the authoritative booking, lease, payment, and inventory system. The provider attribution above is ratified for discovery, detail, availability, inquiry, and booking-entry surfaces. Any additional wording required when a lease, payment, booking record, or customer-service obligation is issued remains subject to the existing `[LEGAL REVIEW]` transactional-handoff gate; no one drafts a paraphrase in its place. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
+1. Issues booking, lease, or payment records of its own. Nantucket Houses may originate and accept a first-time vacation booking (`amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05) and may host the customer-facing vacation-rental experience (`amendments/2026-10-29-nh-vacation-rentals-shared-surface.md`, approved 2026-10-29), but NantucketRentals.com remains the authoritative booking, lease, payment, and inventory system. Provider identification is required on discovery, detail, availability, inquiry, and booking-entry surfaces, but it does not clear the existing launch hold: **no NH-originated booking or transaction flow launches until the handoff string and placement are counsel-approved and validly recorded as `legal.nh.handoff @ <placement>`, and `nhBookingSurfaceCleared()` passes.** No one drafts a paraphrase in place of the required handoff string. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
 2. Uses brokerage vocabulary in product surfaces ("listing," "exclusive," "just listed," "buyer/seller representation")
 3. Puts marketing voice inside service flows (in-stay notifications, home guides, payment/lease messages)
 4. Sends market intelligence or valuation content (C&C's lane, from a named advisor)
 5. Lets AI chat make advisory, legal, or financial statements instead of escalating
 6. Presents vacation-rental inventory without naming NantucketRentals.com as the provider
+7. Extends the shared-surface permission to long-term rentals without a separate approved decision
 
 A request to violate these is refused and flagged, citing this file.

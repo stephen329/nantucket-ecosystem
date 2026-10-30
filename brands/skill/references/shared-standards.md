@@ -36,12 +36,11 @@ One message class → exactly one sending brand → one consent purpose. `[STRAT
 ## Disclosure language library
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
-Canonical strings — use verbatim, never paraphrase, **once ratified**. Three
-rows below are ratified: `attr.nh.vacation-rentals`,
-`attr.nh.vacation-rentals-outbound`, and the counsel-approved
+Canonical strings — use verbatim, never paraphrase, **once ratified**. The only
+ratified verbatim string in this table is the counsel-approved
 `legal.cc.poweredby`, which is enforced by test in
-`src/lib/legal/disclosures.ts`. The `disc.hello.*` rows and `attr.nh.listing`
-are not ratified. Strategy §12 item 2 ("Approve the Hello Nantucket descriptor,
+`src/lib/legal/disclosures.ts`. The `disc.hello.*` and `attr.nh.*` rows are not
+ratified as exact strings. Strategy §12 item 2 ("Approve the Hello Nantucket descriptor,
 publisher credit, editorial charter, and related-party-link standard") remains
 open, so the Hello rows are drafting aids and **must not be enforced** by lint,
 template check, or schema validation. The interim publisher line below also
@@ -56,8 +55,8 @@ not treat either as settled.
 | `disc.hello.affiliated` | Inline at affiliated recommendations | Draft, not ratified — states the ownership relation, no collective term (H-4): "Heads up: [business] is owned by Congdon & Coleman Real Estate, who publish Hello Nantucket." `[STRATEGY §5]` |
 | `disc.hello.sponsored` | Sponsored content (Stage 3, inactive) | `[STRATEGY §5 on activation]` |
 | `attr.nh.listing` | Listing attribution in NH app | `[DECIDE]` |
-| `attr.nh.vacation-rentals` | Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surfaces | **Ratified by Stephen 2026-10-29 — use verbatim:** "Vacation rentals provided by NantucketRentals.com." Place it with the inventory or primary rental action, not only in terms, a global footer, or an About page. This establishes provider attribution; it does not replace any additional legal wording required when a transaction record or service obligation is issued. |
-| `attr.nh.vacation-rentals-outbound` | Nantucket Houses rental results whose property links open on NantucketRentals.com | **Ratified by Stephen 2026-10-22; scope confirmed 2026-10-29 — use verbatim:** "Provided by NantucketRentals.com. Property links open there." Use the general provider attribution instead when the property experience stays on Nantucket Houses. |
+| `attr.nh.vacation-rentals` | Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surfaces | **Required meaning ratified 2026-10-29; exact wording `[DECIDE]`:** clearly identify NantucketRentals.com as the provider. Place the disclosure with the inventory or primary rental action, not only in terms, a global footer, or an About page. Provider identification does not clear `legal.nh.handoff @ <placement>` or the `nhBookingSurfaceCleared()` launch gate. |
+| `attr.nh.vacation-rentals-outbound` | Nantucket Houses rental results whose property links open on NantucketRentals.com | **Required meaning ratified 2026-10-29; exact wording `[DECIDE]`:** identify NantucketRentals.com as provider and make the outbound destination clear before the customer follows the link. |
 | `legal.cc.poweredby` | Legal footers on every C&C surface, lease and payment included | **Ratified and counsel-approved — use verbatim:** "Congdon & Coleman Real Estate, MA Real Estate Broker's License #422678". Re-ratified by Stephen 2026-08-13, compact form approved by counsel 2026-09-11. ~~`[DECIDE: exact licensed-entity string — Stephen authors]`~~ — answered: there is no licensed-entity string, because no surface carries the entity. Held verbatim in `src/lib/legal/disclosures.ts` and recorded in `docs/strategy/brands/congdon-coleman-ratified-strings.md`. |
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
@@ -100,7 +99,7 @@ alone.
 
 - Every image in the shared library carries: source, license/rights (owned / licensed / UGC-permitted), permitted brands, credit requirement, expiry if licensed. `[AUDIT: inventory existing assets]`
 - UGC requires documented permission before use; credit as specified by the rights record.
-- **NantucketRentals.com-owned inventory photography is also Nantucket Houses-owned material** (owner decision, 2026-10-22). Nantucket Houses may use that photography on property-specific rental discovery and home-detail surfaces. The authoritative NantucketRentals.com inventory relationship supplies the per-image rights record: source `NantucketRentals.com property inventory`, rights `owned`, permitted brands `NantucketRentals.com; Nantucket Houses`, no credit requirement unless the source record says otherwise, and no expiry unless the source record says otherwise. A consuming surface may inherit this record instead of duplicating it, but it must preserve the property-to-image relationship and must never present one home's photograph as another home. This permission does not migrate inventory photography to Hello Nantucket; listing-like content remains outside the editorial brand.
+- Shared vacation-rental surface permission does not grant, transfer, or relabel photography rights. Nantucket Houses may use inventory photography only when the source rights record permits Nantucket Houses use. The consuming surface preserves the property-to-image relationship, accessible alternative text, and every credit or expiry carried by the source record. It must never present one home's photograph as another home. Nothing here migrates inventory photography to Hello Nantucket; listing-like content remains outside the editorial brand.
 
 ## Asset and file conventions
 

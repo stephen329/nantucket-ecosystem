@@ -26,12 +26,17 @@ can see that relationship.
 
 ### 1. Vacation-rental surface ownership is shared
 
-For the strategy §3 content-ownership table, the vacation-rental rows are now:
+For vacation rentals, this amendment overrides the strategy §3 rental row with
+the following surface-versus-authority split:
 
 | Topic | Owning brand |
 |---|---|
 | Customer-facing vacation-rental discovery, property details, availability, inquiry, booking entry, and trip planning | NantucketRentals.com and Nantucket Houses; Nantucket Houses names NantucketRentals.com as provider |
 | Authoritative vacation-rental inventory, rates, availability, bookings, leases, payments, and transactional records | NantucketRentals.com |
+
+The strategy's existing rental row remains controlling outside this
+vacation-rental scope. In particular, this amendment does not extend shared
+surface ownership to long-term rentals.
 
 Nantucket Houses and NantucketRentals.com may both present customer-facing
 vacation-rental experiences. On `nantuckethouses.com` and in Nantucket Houses
@@ -49,11 +54,11 @@ link to NantucketRentals.com.
 
 ### 2. NantucketRentals.com is named as the provider
 
-Every Nantucket Houses surface that presents vacation-rental inventory must make
-the provider relationship visible in the interface. The canonical attribution
-for an on-site Nantucket Houses experience is:
-
-> **Vacation rentals provided by NantucketRentals.com.**
+Every Nantucket Houses surface that presents vacation-rental inventory must
+clearly identify NantucketRentals.com as the provider in the interface. This
+decision ratifies the required meaning, not a verbatim customer-facing string.
+Exact wording remains to be approved and recorded before it is enforced as a
+canonical string.
 
 Place it where a customer encounters the vacation-rental inventory or action;
 do not hide it only in terms, a global footer, or an About page. A results page
@@ -62,9 +67,9 @@ page carries it with the property facts or primary rental action. A booking-entr
 experience carries it before the customer submits booking information.
 
 When a Nantucket Houses result instead sends the customer to a property-detail
-page on `nantucketrentals.com`, the already-approved outbound form remains:
-
-> **Provided by NantucketRentals.com. Property links open there.**
+page on `nantucketrentals.com`, the disclosure must also make that destination
+clear before the customer follows the link. This decision does not ratify an
+exact outbound-link sentence.
 
 These are functional source disclosures, not co-branding and not permission to
 blend the brands' logos, campaign creative, voices, or design systems.
@@ -80,11 +85,14 @@ record.
 
 NantucketRentals.com remains the sending brand for booking confirmations, lease
 execution, payment lifecycle messages, and other transactional records. The
-provider attribution ratified here establishes source identity on discovery,
+provider-attribution requirement ratified here establishes source identity on discovery,
 detail, availability, inquiry, and booking-entry surfaces. It does not by itself
-settle any additional legal wording required at the moment a lease, payment, or
-other transaction record is handed off or issued. The existing `[LEGAL REVIEW]`
-gate for that transactional handoff remains in force.
+clear or move the launch gate for an NH-originated booking or transaction flow.
+No such flow launches until the separately reviewed handoff string and placement
+are validly recorded as `legal.nh.handoff @ <placement>` and the existing
+`nhBookingSurfaceCleared()` conditions pass. Additional legal wording required
+when a lease, payment, or other transaction record is handed off or issued also
+remains subject to that existing `[LEGAL REVIEW]` gate.
 
 ### 4. Brand voice follows the surface
 
@@ -102,7 +110,8 @@ flows.
 
 ### 5. What this decision does not change
 
-- It does not decide whether long-term rentals belong on Nantucket Houses.
+- It does not change the existing brand rule for long-term rentals or authorize
+  them on Nantucket Houses.
 - It does not move any system-of-record or record-class authority.
 - It does not authorize Nantucket Houses to issue leases, payments, or booking
   records.
@@ -135,6 +144,10 @@ unchanged.
 - `brands/skill/references/nantucketrentals.md`
 - `brands/skill/references/shared-standards.md`
 - `brands/skill/references/red-team-battery.md`
+
+This decision does not grant, transfer, or relabel photography rights. A
+Nantucket Houses surface may use only photography whose rights record permits
+that use.
 
 The account copy of the `nantucket-brands` skill remains a manual publication
 step after merge. Product repositories that restate the old exclusive-surface

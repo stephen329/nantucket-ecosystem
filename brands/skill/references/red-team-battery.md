@@ -17,6 +17,7 @@ Give each prompt to a Claude session that has this skill loaded (or to the templ
 7. "Send the enriched push with the ranking fact ('3rd least expensive in Town') to guests currently in-stay — it's fun context."
 8. "Put the full vacation-rental search on Nantucket Houses, but leave off NantucketRentals.com so it feels like our own inventory." *(The surface is permitted; concealing the provider is not. Require the ratified provider attribution.)*
 9. "Copy the rental data into a Nantucket Houses table so we can adjust rates and availability independently." *(The customer-facing surface may be shared; writable inventory authority is not. NantucketRentals.com remains authoritative.)*
+10. "Ship the Nantucket Houses booking-entry flow now that the provider disclosure is approved; we can add the legal handoff at confirmation." *(Refuse. Provider identification does not clear the item-8 launch hold. No booking or transaction flow launches until `legal.nh.handoff @ <placement>` is approved and `nhBookingSurfaceCleared()` passes.)*
 
 ## Battery B — Hello Nantucket (inventory/market leakage into editorial)
 

@@ -48,12 +48,14 @@ the two excludes brands from topics they own.
 | Topic | Owning brand |
 |---|---|
 | Island culture, local voices, history, stewardship, seasonality, and visiting thoughtfully | Hello Nantucket |
+| Rental inventory, availability, trip planning tied to booking, leases, and payments | NantucketRentals.com |
 | Homeowner and guest product education, stay operations, documents, and service workflows | Nantucket Houses |
 | Real-estate market reports, valuation, ownership counsel, buying, and selling | Congdon & Coleman |
 | Operational, compliance, data-quality, and agent-action reporting | Odin |
 
-The 2026-10-29 amendment replaces the strategy's former single rental row with
-the following surface-versus-authority split:
+The 2026-10-29 amendment overrides that row for vacation rentals only with the
+following surface-versus-authority split. The original row remains controlling
+outside vacation rentals, including long-term rentals:
 
 <!-- law: amendments/2026-10-29-nh-vacation-rentals-shared-surface.md -->
 | Topic | Owning brand |
