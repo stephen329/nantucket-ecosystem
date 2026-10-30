@@ -25,13 +25,6 @@ facts. It permits factual research language but not unsourced claims,
 representation, valuation, negotiation, or individualized advice. Structured interface content
 remains appropriate when it improves scanning or helps the user complete a task.
 
-Supporting copy must add a material fact, constraint, or consequence that the
-interface does not already communicate. Do not narrate an obvious control,
-repeat its label in sentence form, or tell people to use an option only if it is
-useful. If removing a sentence does not change a decision, prevent an error, or
-clarify what happens next, remove it. This is the test for tautological and
-low-information interface copy.
-
 **Worked examples:**
 
 - ❌ "🎉 Your dream vacation starts NOW! Check out everything Nantucket Houses has to offer!"
