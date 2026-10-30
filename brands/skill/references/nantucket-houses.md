@@ -73,9 +73,9 @@ urgency into Nantucket Houses.
 
 ## Cross-brand touchpoints
 
-- Listing attribution string (when a property's brokerage identity must appear): canonical string in `shared-standards.md`. That is the only place brokerage identity appears in-app.
+- Listing attribution string (when a for-sale property's brokerage identity must appear): canonical string in `shared-standards.md`. This does not displace a separately governing legal or referral disclosure.
 - Vacation-rental provider disclosure (owner decision, 2026-10-29): every Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surface clearly identifies NantucketRentals.com as the provider. Place that meaning with the inventory or primary rental action, not only in terms, a global footer, or an About page. Exact wording is not yet ratified.
-- Rental-discovery outbound-link disclosure (owner decision, 2026-10-29): when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`, identify NantucketRentals.com as provider and make the outbound destination clear before the customer follows the link. Exact wording is not yet ratified.
+- Rental-discovery outbound-link disclosure (owner decision, 2026-10-29): when Nantucket Houses rental results link to property-detail pages on `https://nantucketrentals.com/`, identify NantucketRentals.com as provider and make the outbound destination clear before the customer follows the link. Exact wording for that provider/destination meaning is not yet ratified. In addition, every referral to NantucketRentals.com carries the counsel-approved `legal.nr.referral-affiliation` disclosure from `shared-standards.md` verbatim and adjacent to the referral.
 - Legal footers on lease/payment surfaces carry the **trade name**, never the legal entity: `legal.cc.poweredby` in `shared-standards.md`, verbatim. The entity form these surfaces once carried was deleted on 2026-09-04, and counsel confirmed on 2026-09-11 that the trade name suffices on a lease or payment surface. Naming O2554 LLC in customer copy is a test failure, not a judgement call.
 
 ## Vacation-rental surfaces

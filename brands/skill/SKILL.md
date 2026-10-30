@@ -102,6 +102,7 @@ Functional credits only; no shared campaign creative, no co-branded consumer mar
 - Hello Nantucket publisher line (bio, About, footers, signup)
 - Listing attribution inside Nantucket Houses
 - NantucketRentals.com provider attribution on every Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, or booking-entry surface
+- The counsel-approved `legal.nr.referral-affiliation` string, verbatim and adjacent to every outbound referral to NantucketRentals.com, in addition to the Nantucket Houses provider/destination meaning
 - "Powered by" / legal-entity footers where C&C is the licensed entity
 - Lease and legal documents carry C&C legal identity regardless of the surface that produced them
 

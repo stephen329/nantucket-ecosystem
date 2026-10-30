@@ -37,11 +37,12 @@ One message class → exactly one sending brand → one consent purpose. `[STRAT
 ## Disclosure language library
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
-Canonical strings — use verbatim, never paraphrase, **once ratified**. The only
-ratified verbatim string in this table is the counsel-approved
+Canonical strings — use verbatim, never paraphrase, **once ratified**. The
+ratified verbatim strings in this table are the counsel-approved
 `legal.cc.poweredby`, which is enforced by test in
 `src/lib/legal/disclosures.ts`. The `disc.hello.*` and `attr.nh.*` rows are not
-ratified as exact strings. Strategy §12 item 2 ("Approve the Hello Nantucket descriptor,
+ratified as exact strings, while `legal.nr.referral-affiliation` is separately
+ratified and counsel-approved. Strategy §12 item 2 ("Approve the Hello Nantucket descriptor,
 publisher credit, editorial charter, and related-party-link standard") remains
 open, so the Hello rows are drafting aids and **must not be enforced** by lint,
 template check, or schema validation. The interim publisher line below also
@@ -57,7 +58,8 @@ not treat either as settled.
 | `disc.hello.sponsored` | Sponsored content (Stage 3, inactive) | `[STRATEGY §5 on activation]` |
 | `attr.nh.listing` | Listing attribution in NH app | `[DECIDE]` |
 | `attr.nh.vacation-rentals` | Nantucket Houses vacation-rental inventory, property-detail, availability, inquiry, and booking-entry surfaces | **Required meaning ratified 2026-10-29; exact wording `[DECIDE]`:** clearly identify NantucketRentals.com as the provider. Place the disclosure with the inventory or primary rental action, not only in terms, a global footer, or an About page. Provider identification does not clear `legal.nh.handoff @ <placement>` or the `nhBookingSurfaceCleared()` launch gate. |
-| `attr.nh.vacation-rentals-outbound` | Nantucket Houses rental results whose property links open on NantucketRentals.com | **Required meaning ratified 2026-10-29; exact wording `[DECIDE]`:** identify NantucketRentals.com as provider and make the outbound destination clear before the customer follows the link. |
+| `attr.nh.vacation-rentals-outbound` | Nantucket Houses rental results whose property links open on NantucketRentals.com | **Required meaning ratified 2026-10-29; exact wording `[DECIDE]`:** identify NantucketRentals.com as provider and make the outbound destination clear before the customer follows the link. This meaning stacks with `legal.nr.referral-affiliation`; every outbound referral also carries that ratified verbatim disclosure adjacent to the referral. |
+| `legal.nr.referral-affiliation` | Every surface routing a visitor to NantucketRentals.com, adjacent to the referral | **Ratified and counsel-approved — use verbatim:** "NantucketRentals.com is affiliated with Congdon & Coleman Real Estate. Brokerage and property management services are provided by Congdon & Coleman Real Estate." |
 | `legal.cc.poweredby` | Legal footers on every C&C surface, lease and payment included | **Ratified and counsel-approved — use verbatim:** "Congdon & Coleman Real Estate, MA Real Estate Broker's License #422678". Re-ratified by Stephen 2026-08-13, compact form approved by counsel 2026-09-11. ~~`[DECIDE: exact licensed-entity string — Stephen authors]`~~ — answered: there is no licensed-entity string, because no surface carries the entity. Held verbatim in `src/lib/legal/disclosures.ts` and recorded in `docs/strategy/brands/congdon-coleman-ratified-strings.md`. |
 
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
@@ -112,7 +114,7 @@ alone.
 
 - Per-repo context blocks (CLAUDE.md/AGENTS.md) are **maintained by hand** from `docs/strategy/brands/` in the Odin repository — which is also where the ratified records live. **No generator exists**, so a merge changing a ratified record updates nothing on its own and every context block is a separate manual edit. ~~`[DECIDE: which copy is upstream, and how the other is regenerated — Stephen]`~~ **Decided 2026-09-03: that directory is upstream** and this skill is published from it (`../../nantucket-brands-skill-reconciliation.md`, C1); the "how" half is answered by there being no regeneration — it is a re-upload, and it is manual too.
 - Lintable rules: canonical-name table (string match — armed in cnc-web-fe, `[DECIDE: implementation tickets per repo]` elsewhere); sending-brand header on outbound templates in nrbe (routing-layer check `[DECIDE: implementation ticket]`).
-- **Disclosure-string presence on Hello surfaces is NOT lintable yet**, and was listed here as though it were. It contradicted this file's own disclosure-library rule above: none of the exact `disc.hello.*` strings is ratified, §12 item 2 is open, and those Hello strings "must not be enforced by lint, template check, or schema validation" until it closes. A template check is exactly the enforcement that rule forbids. Hello-string presence becomes lintable when §12 closes and those strings are ratified — not before. Other library rows keep the individual status stated in their cells, including the ratified required meaning of the Nantucket Houses vacation-rental provider attribution and the ratified verbatim `legal.cc.poweredby` string.
+- **Disclosure-string presence on Hello surfaces is NOT lintable yet**, and was listed here as though it were. It contradicted this file's own disclosure-library rule above: none of the exact `disc.hello.*` strings is ratified, §12 item 2 is open, and those Hello strings "must not be enforced by lint, template check, or schema validation" until it closes. A template check is exactly the enforcement that rule forbids. Hello-string presence becomes lintable when §12 closes and those strings are ratified — not before. Other library rows keep the individual status stated in their cells, including the ratified required meaning of the Nantucket Houses vacation-rental provider attribution and the ratified verbatim `legal.nr.referral-affiliation` and `legal.cc.poweredby` strings.
 - Run `references/red-team-battery.md` on any guideline, template, or flow change.
 
 ## Natural writing standard
