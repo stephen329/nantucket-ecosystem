@@ -11,7 +11,7 @@ Congdon & Coleman is the trust brand and the licensed legal entity: advisory rel
 <!-- law: nantucket-ecosystem-integrated-strategy.md -->
 > Anything involving representation, valuation, fiduciary judgment, negotiation, or consequential advice comes from a named person.
 
-Those communications carry an advisor's name, direct contact, and signature: market reports, opinions of value, owner advisory letters, and anything touching a client's money or property decisions.
+Those communications carry an advisor's name, direct contact, and signature: interpretive market reports, opinions of value, owner advisory letters, and anything touching a client's money or property decisions. Nantucket Houses may separately publish source-dated factual data reports and research tools without an advisor signature; the line is judgment and advice, not the mere presence of market facts.
 
 **Operational and service communication may come from the brand.** A request to update a vacation-rental calendar, a portal invitation, a scheduling or document notice — none involve representation, valuation, fiduciary judgment, negotiation, or consequential advice, and none require a named sender. Requiring one there is not a stricter reading of the strategy; it is a different rule.
 
@@ -64,7 +64,7 @@ Photography standards: properties and island photographed with documentary restr
 
 ## Content templates
 
-- **Market report:** data section (sourced, dated) → advisor's interpretation (clearly marked as judgment) → implications by owner segment → named signature. Not published on Hello — §3 assigns the topic to Congdon & Coleman and says Hello should not become the primary publisher of real-estate and rental-market intelligence — and never sent as anonymous marketing. `[DECIDE: template → assets/]`
+- **Interpretive market report:** data section (sourced, dated) → advisor's interpretation (clearly marked as judgment) → implications by owner segment → named signature. Nantucket Houses owns factual market datasets, research tools, and source-dated data reports; Congdon & Coleman owns this advisory layer. Neither form is published on Hello, which may not become the primary publisher of real-estate and rental-market intelligence. Never send an interpretive report as anonymous marketing. `[DECIDE: template → assets/]`
 - **Opinion of value:** `[DECIDE: template — Stephen authors; includes methodology, comparables, limitations language, licensed-entity identification]`
 - **Owner advisory letters:** personal, specific, from the client's advisor. `[AUDIT: current letter formats]`
 

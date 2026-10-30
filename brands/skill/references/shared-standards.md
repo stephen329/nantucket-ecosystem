@@ -14,7 +14,8 @@ One message class → exactly one sending brand → one consent purpose. `[STRAT
 | Payment lifecycle | NantucketRentals | Transactional | Event-driven | Reminder, failed payment, refund |
 | In-stay service | Nantucket Houses | Service | Event-driven | Check-in, home guide, issue follow-up |
 | Owner statements & property status | Nantucket Houses (app) / C&C (formal) | Service | `[STRATEGY §4]` | Payout posted; annual statement |
-| Owner advisory & market reports | Congdon & Coleman | **Marketing (explicit opt-in)** — ~~Service or opted-in advisory `[STRATEGY §4]`~~ settled 2026-09-16 by the owner: *"Marketing is the safe choice to avoid CAN-SPAM violations."* Being marketing does **not** lift §4's named-sender requirement: an opinion of value still comes from a named person. | `[STRATEGY §4]` | Opinion of value, market report |
+| Nantucket Houses research alerts & distributed factual data reports | Nantucket Houses | Marketing (explicit opt-in); in-product, user-initiated research is not a send | `[DECIDE: class and cap]` | Saved-search alert, subscribed data report |
+| Owner advisory & interpretive market reports | Congdon & Coleman | **Marketing (explicit opt-in)** — ~~Service or opted-in advisory `[STRATEGY §4]`~~ settled 2026-09-16 by the owner: *"Marketing is the safe choice to avoid CAN-SPAM violations."* Being marketing does **not** lift §4's named-sender requirement: an opinion of value still comes from a named person. | `[STRATEGY §4]` | Opinion of value, advisor interpretation |
 | Editorial / newsletter / social | Hello Nantucket | Marketing (explicit opt-in) | `[STRATEGY §4]` | Newsletter, IG content |
 
 **Routing rules:**

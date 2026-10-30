@@ -2,7 +2,7 @@
 
 *Subordinate to the Nantucket Ecosystem Strategy, Section 3. Conflicts resolve to the plan.*
 
-Nantucket Houses is the product brand across its applications and `nantuckethouses.com`: it serves guests during their stay, owners managing their property, and prospective vacation renters discovering and booking a home. Vacation rentals may live on Nantucket Houses as fully as they do on NantucketRentals.com at the customer-facing surface, provided Nantucket Houses clearly names NantucketRentals.com as the provider. NantucketRentals.com remains authoritative for the inventory and transaction records. Nantucket Houses' one job is the experience — calm, useful, service-first. It is where trust is either earned through a useful interaction or lost through a single tone-deaf one.
+Nantucket Houses is the market research and real-estate data product across its applications and `nantuckethouses.com`. Active listings, property facts, market datasets, research tools, and factual data reports are core Nantucket Houses experiences. It also serves guests during their stay, owners managing their property, and prospective vacation renters discovering and booking a home. Vacation rentals may live on Nantucket Houses as fully as they do on NantucketRentals.com at the customer-facing surface, provided Nantucket Houses clearly names NantucketRentals.com as the provider. NantucketRentals.com remains authoritative for vacation-rental inventory and transaction records. Nantucket Houses is calm, useful, factual, and service-first. It is where trust is either earned through a useful interaction or lost through a single tone-deaf one.
 
 ## Voice
 
@@ -16,11 +16,13 @@ Calm, competent, brief. The app speaks like an excellent house manager: anticipa
   **What does not change.** The voice: calm, competent, brief, no upsell vocabulary. And marketing never rides inside a service flow — the guest-mode test still governs in-stay messaging, so a check-in notice, a home guide or an issue follow-up carries no offer, whatever class is permitted alongside it. A separate message under a marketing class is a different thing from a service message that has started selling.
 
   **None of this is sendable today**, and the narrowing changes no send: the classes are proposed and unratified, none has a frequency-cap cell (the message-class dimension is fail-closed), and `nhAdvertisingCleared()` still blocks both showcase members on four unrecorded prerequisites. Recorded in `../../../amendments/2026-09-16-per-brand-marketing-classes.md`.
-- **Owner mode:** professional and factual. Owners are managing an asset; give them signal (bookings, payments, property status) without brokerage vocabulary or upsell.
+- **Research mode:** factual and transparent. Show the source, applicable period, methodology, and material limitations. Help people understand listings, properties, and market conditions without turning data into representation, valuation, or personalized advice.
+- **Owner mode:** professional and factual. Owners are managing an asset; give them signal (bookings, payments, property status, and sourced market data) without upsell or unsigned brokerage advice.
 
 The natural-writing standard in `shared-standards.md` applies. Here, specificity
-means useful stay, home, booking, payment, and property-status facts. It does not
-permit market commentary or brokerage language. Structured interface content
+means useful stay, home, booking, payment, property-status, listing, and market
+facts. It permits factual research language but not unsourced claims,
+representation, valuation, negotiation, or individualized advice. Structured interface content
 remains appropriate when it improves scanning or helps the user complete a task.
 
 Supporting copy must add a material fact, constraint, or consequence that the
@@ -62,7 +64,7 @@ The in-app AI assistant speaks in NH voice: helpful, bounded, honest about being
 
 - It answers stay/property questions from home-guide and lease data; it does not improvise answers about money, legal terms, or availability.
 - **Escalation handoff phrasing** — when a request exceeds its lane (payment disputes, lease questions, emergencies, anything advisory): "That's one for the team — I've flagged it and someone will follow up directly. For anything urgent, call [number]." `[DECIDE: ratify exact phrasing + urgent-line number]`
-- The AI never adopts marketing voice, never recommends listings, never gives valuation or market commentary.
+- The AI may retrieve and explain sourced listing and market facts, including comparisons and methodology. It never adopts marketing voice, presents an automated estimate as a valuation, recommends a transaction, claims representation, or gives individualized brokerage, legal, or financial advice.
 
 ## Visual language
 
@@ -104,14 +106,37 @@ pressure, or conversion styling from NantucketRentals.com, and do not place
 vacation-rental promotion inside a stay, home-guide, payment, or owner-service
 flow.
 
+## Market research, listings, and data reports
+
+Nantucket Houses may host active real-estate listings, listing search, property
+and parcel facts, current and historical market data, maps, filters,
+comparisons, charts, trends, and source-dated factual data reports. These are
+core product surfaces under
+`amendments/2026-10-29-nh-market-research-and-data-product.md`.
+
+Every material statistic or report identifies its source, applicable period,
+methodology, and material limitations. Listing surfaces preserve required data
+source and brokerage attribution. The exact `attr.nh.listing` string remains
+`[DECIDE]`; no team may invent a canonical phrase or omit attribution while it
+is unresolved.
+
+Nantucket Houses may state what the sourced data shows. Congdon & Coleman owns
+the advisory layer: representation, valuation, fiduciary judgment, negotiation,
+recommendations, and advice about what the facts mean for a person's property
+or decision. A named advisor is required wherever §4 requires one.
+
+Ordinary factual terms such as `active listing`, `sale`, `asking price`, `days
+on market`, and listing status are permitted. Displaying a listing does not
+claim that Congdon & Coleman represents the seller, buyer, or property.
+
 ## The prohibition list
 
 Nantucket Houses **never**:
 
 1. Issues booking, lease, or payment records of its own. Nantucket Houses may originate and accept a first-time vacation booking (`amendments/2026-08-10-nh-in-app-booking-and-paid-installs.md`, approved 2026-09-05) and may host the customer-facing vacation-rental experience (`amendments/2026-10-29-nh-vacation-rentals-shared-surface.md`, approved 2026-10-29), but NantucketRentals.com remains the authoritative booking, lease, payment, and inventory system. Provider identification is required on discovery, detail, availability, inquiry, and booking-entry surfaces, but it does not clear the existing launch hold: **no NH-originated booking or transaction flow launches until the handoff string and placement are counsel-approved and validly recorded as `legal.nh.handoff @ <placement>`, and `nhBookingSurfaceCleared()` passes.** No one drafts a paraphrase in place of the required handoff string. *Before 2026-09-05 this item read "Hosts booking search surfaces"; that prohibition is withdrawn.*
-2. Uses brokerage vocabulary in product surfaces ("listing," "exclusive," "just listed," "buyer/seller representation")
+2. Claims a brokerage relationship, exclusive representation, appraisal, or individualized recommendation that the product does not have. Factual listing and market vocabulary is permitted; representation and advice are not.
 3. Puts marketing voice inside service flows (in-stay notifications, home guides, payment/lease messages)
-4. Sends market intelligence or valuation content (C&C's lane, from a named advisor)
+4. Presents unsourced market claims, disguises automated output as a valuation or appraisal, or gives individualized brokerage advice. Factual market research and data reports are Nantucket Houses' lane; advisory interpretation remains Congdon & Coleman's.
 5. Lets AI chat make advisory, legal, or financial statements instead of escalating
 6. Presents vacation-rental inventory without naming NantucketRentals.com as the provider
 7. Extends the shared-surface permission to long-term rentals without a separate approved decision
