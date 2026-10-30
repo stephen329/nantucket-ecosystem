@@ -156,4 +156,4 @@ The decision is implemented correctly only when:
 
 Approved and ratified by Stephen Maury through explicit Codex task direction on
 2026-10-29. The approval becomes operative when the implementing pull request is
-merged to `main`; record that PR here when opened.
+merged to `main`: [nantucket-ecosystem#11](https://github.com/stephen329/nantucket-ecosystem/pull/11).

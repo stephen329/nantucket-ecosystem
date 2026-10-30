@@ -157,4 +157,6 @@ rule must be updated separately before they rely on it.
 
 Approved by Stephen Maury on 2026-10-29 through his explicit direction in the
 Codex task that produced this amendment. Merge publication remains separate from
-decision approval; the amendment is operative only after it lands on `main`.
+decision approval; the amendment is operative only after
+[nantucket-ecosystem#11](https://github.com/stephen329/nantucket-ecosystem/pull/11)
+lands on `main`.
